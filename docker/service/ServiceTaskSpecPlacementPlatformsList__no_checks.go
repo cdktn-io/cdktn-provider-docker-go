@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

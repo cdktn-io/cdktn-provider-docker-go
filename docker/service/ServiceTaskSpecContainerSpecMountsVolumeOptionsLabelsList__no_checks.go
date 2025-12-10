@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecMountsVolumeOptionsLabelsList) va
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecMountsVolumeOptionsLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecMountsVolumeOptionsLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

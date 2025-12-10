@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

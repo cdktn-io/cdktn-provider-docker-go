@@ -29,9 +29,9 @@ func (c *jsiiProxy_ContainerPortsList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (c *jsiiProxy_ContainerPortsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ContainerPortsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDockerRegistryImageManifestsManifestsList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataDockerRegistryImageManifestsManifestsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDockerRegistryImageManifestsManifestsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

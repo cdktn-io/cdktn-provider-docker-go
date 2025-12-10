@@ -15,7 +15,7 @@ func (v *jsiiProxy_VolumeLabelsList) validateGetParameters(index *float64) error
 	return nil
 }
 
-func (v *jsiiProxy_VolumeLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VolumeLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

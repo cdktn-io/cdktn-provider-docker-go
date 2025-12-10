@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecMountsOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecMountsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecMountsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecMountsOutputReference) validatePu
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecMountsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecMountsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BuildxBuilderDockerContainerOutputReference) validateGetStrin
 	return nil
 }
 
-func (b *jsiiProxy_BuildxBuilderDockerContainerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BuildxBuilderDockerContainerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BuildxBuilderDockerContainerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BuildxBuilderDockerContainerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

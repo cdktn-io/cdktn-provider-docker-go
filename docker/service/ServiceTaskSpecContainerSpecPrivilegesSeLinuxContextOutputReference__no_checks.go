@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputRef
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

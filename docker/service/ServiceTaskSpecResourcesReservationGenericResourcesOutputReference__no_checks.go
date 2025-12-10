@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceTaskSpecResourcesReservationGenericResourcesOutputRefe
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecResourcesReservationGenericResourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceTaskSpecResourcesReservationGenericResourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecResourcesReservationGenericResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceTaskSpecResourcesReservationGenericResourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkIpamConfigOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (n *jsiiProxy_NetworkIpamConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkIpamConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkIpamConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkIpamConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerNetworkDataList) validateGetParameters(index *float6
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNetworkDataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNetworkDataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

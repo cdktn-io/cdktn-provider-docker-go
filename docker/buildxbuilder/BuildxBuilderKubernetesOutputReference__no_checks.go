@@ -43,7 +43,7 @@ func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) validatePutRequestsPa
 	return nil
 }
 
-func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -67,14 +67,14 @@ type ServiceTaskSpecContainerSpecPrivilegesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCredentialSpec(value *ServiceTaskSpecContainerSpecPrivilegesCredentialSpec)
 	PutSeLinuxContext(value *ServiceTaskSpecContainerSpecPrivilegesSeLinuxContext)
 	ResetCredentialSpec()
 	ResetSeLinuxContext()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -450,8 +450,8 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesOutputReference) Interp
 	return returns
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -459,7 +459,7 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesOutputReference) Interp
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesOutputReference) ResetS
 	)
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesOutputReference) Resolv
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecMountsVolumeOptionsOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecMountsVolumeOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecMountsVolumeOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecMountsVolumeOptionsOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecMountsVolumeOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecMountsVolumeOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

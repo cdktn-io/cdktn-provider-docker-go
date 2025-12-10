@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

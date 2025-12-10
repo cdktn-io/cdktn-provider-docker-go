@@ -43,11 +43,11 @@ func (b *jsiiProxy_BuildxBuilderKubernetesQemuOutputReference) validateGetString
 	return nil
 }
 
-func (b *jsiiProxy_BuildxBuilderKubernetesQemuOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BuildxBuilderKubernetesQemuOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BuildxBuilderKubernetesQemuOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BuildxBuilderKubernetesQemuOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (i *jsiiProxy_ImageBuildOutputReference) validateGetStringMapAttributeParam
 	return nil
 }
 
-func (i *jsiiProxy_ImageBuildOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImageBuildOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (i *jsiiProxy_ImageBuildOutputReference) validatePutUlimitParameters(value 
 	return nil
 }
 
-func (i *jsiiProxy_ImageBuildOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImageBuildOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PluginGrantPermissionsList) validateGetParameters(index *floa
 	return nil
 }
 
-func (p *jsiiProxy_PluginGrantPermissionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PluginGrantPermissionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

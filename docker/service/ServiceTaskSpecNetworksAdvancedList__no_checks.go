@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceTaskSpecNetworksAdvancedList) validateGetParameters(in
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecNetworksAdvancedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceTaskSpecNetworksAdvancedList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

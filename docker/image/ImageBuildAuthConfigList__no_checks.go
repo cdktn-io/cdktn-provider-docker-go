@@ -15,7 +15,7 @@ func (i *jsiiProxy_ImageBuildAuthConfigList) validateGetParameters(index *float6
 	return nil
 }
 
-func (i *jsiiProxy_ImageBuildAuthConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImageBuildAuthConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

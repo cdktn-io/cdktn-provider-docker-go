@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkIpamConfigList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (n *jsiiProxy_NetworkIpamConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkIpamConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

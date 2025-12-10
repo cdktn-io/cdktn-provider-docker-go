@@ -43,11 +43,11 @@ func (i *jsiiProxy_ImageBuildUlimitOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (i *jsiiProxy_ImageBuildUlimitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImageBuildUlimitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_ImageBuildUlimitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImageBuildUlimitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

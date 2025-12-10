@@ -43,11 +43,11 @@ func (b *jsiiProxy_BuildxBuilderKubernetesLimitsOutputReference) validateGetStri
 	return nil
 }
 
-func (b *jsiiProxy_BuildxBuilderKubernetesLimitsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BuildxBuilderKubernetesLimitsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BuildxBuilderKubernetesLimitsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BuildxBuilderKubernetesLimitsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

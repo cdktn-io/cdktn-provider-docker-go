@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerMountsVolumeOptionsLabelsList) validateGetParameters
 	return nil
 }
 
-func (c *jsiiProxy_ContainerMountsVolumeOptionsLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerMountsVolumeOptionsLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

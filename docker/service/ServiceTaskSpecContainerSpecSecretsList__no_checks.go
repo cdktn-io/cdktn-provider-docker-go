@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecSecretsList) validateGetParameter
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecSecretsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecSecretsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

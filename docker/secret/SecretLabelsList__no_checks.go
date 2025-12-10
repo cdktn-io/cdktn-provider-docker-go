@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecretLabelsList) validateGetParameters(index *float64) error
 	return nil
 }
 
-func (s *jsiiProxy_SecretLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecretLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerUlimitList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (c *jsiiProxy_ContainerUlimitList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerUlimitList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

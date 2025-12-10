@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerMountsVolumeOptionsLabelsOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ContainerMountsVolumeOptionsLabelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerMountsVolumeOptionsLabelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerMountsVolumeOptionsLabelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerMountsVolumeOptionsLabelsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

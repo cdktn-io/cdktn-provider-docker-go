@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

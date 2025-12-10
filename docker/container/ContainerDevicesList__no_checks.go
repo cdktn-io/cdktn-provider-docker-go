@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerDevicesList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (c *jsiiProxy_ContainerDevicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerDevicesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

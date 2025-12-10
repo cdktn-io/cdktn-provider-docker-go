@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerUploadList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (c *jsiiProxy_ContainerUploadList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerUploadList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

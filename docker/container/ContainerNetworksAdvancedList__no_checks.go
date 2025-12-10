@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerNetworksAdvancedList) validateGetParameters(index *f
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNetworksAdvancedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNetworksAdvancedList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

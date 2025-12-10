@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecLabelsList) validateGetParameters
 	return nil
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
