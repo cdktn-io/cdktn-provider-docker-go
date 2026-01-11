@@ -5,10 +5,10 @@ package image
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/image/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/image/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -520,7 +520,7 @@ func NewImage(scope constructs.Construct, id *string, config *ImageConfig) Image
 	j := jsiiProxy_Image{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.image.Image",
+		"@cdktn/provider-docker.image.Image",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -533,7 +533,7 @@ func NewImage_Override(i Image, scope constructs.Construct, id *string, config *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.image.Image",
+		"@cdktn/provider-docker.image.Image",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -683,7 +683,7 @@ func Image_GenerateConfigForImport(scope constructs.Construct, importToId *strin
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.image.Image",
+		"@cdktn/provider-docker.image.Image",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -718,7 +718,7 @@ func Image_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.image.Image",
+		"@cdktn/provider-docker.image.Image",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func Image_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.image.Image",
+		"@cdktn/provider-docker.image.Image",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -756,7 +756,7 @@ func Image_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.image.Image",
+		"@cdktn/provider-docker.image.Image",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -769,7 +769,7 @@ func Image_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-docker.image.Image",
+		"@cdktn/provider-docker.image.Image",
 		"tfResourceType",
 		&returns,
 	)

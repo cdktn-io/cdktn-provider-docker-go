@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.provider.DockerProvider",
+		"@cdktn/provider-docker.provider.DockerProvider",
 		reflect.TypeOf((*DockerProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,11 +71,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.provider.DockerProviderConfig",
+		"@cdktn/provider-docker.provider.DockerProviderConfig",
 		reflect.TypeOf((*DockerProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.provider.DockerProviderRegistryAuth",
+		"@cdktn/provider-docker.provider.DockerProviderRegistryAuth",
 		reflect.TypeOf((*DockerProviderRegistryAuth)(nil)).Elem(),
 	)
 }

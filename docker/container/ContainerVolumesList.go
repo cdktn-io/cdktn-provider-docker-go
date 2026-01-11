@@ -5,9 +5,9 @@ package container
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/container/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/container/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -124,7 +124,7 @@ func NewContainerVolumesList(terraformResource cdktf.IInterpolatingParent, terra
 	j := jsiiProxy_ContainerVolumesList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.container.ContainerVolumesList",
+		"@cdktn/provider-docker.container.ContainerVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -136,7 +136,7 @@ func NewContainerVolumesList_Override(c ContainerVolumesList, terraformResource 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.container.ContainerVolumesList",
+		"@cdktn/provider-docker.container.ContainerVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

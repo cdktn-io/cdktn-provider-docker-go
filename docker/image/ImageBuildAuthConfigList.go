@@ -5,9 +5,9 @@ package image
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/image/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/image/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -124,7 +124,7 @@ func NewImageBuildAuthConfigList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_ImageBuildAuthConfigList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.image.ImageBuildAuthConfigList",
+		"@cdktn/provider-docker.image.ImageBuildAuthConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -136,7 +136,7 @@ func NewImageBuildAuthConfigList_Override(i ImageBuildAuthConfigList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.image.ImageBuildAuthConfigList",
+		"@cdktn/provider-docker.image.ImageBuildAuthConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

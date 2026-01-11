@@ -5,10 +5,10 @@ package plugin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/plugin/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/plugin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -546,7 +546,7 @@ func NewPlugin(scope constructs.Construct, id *string, config *PluginConfig) Plu
 	j := jsiiProxy_Plugin{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.plugin.Plugin",
+		"@cdktn/provider-docker.plugin.Plugin",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -559,7 +559,7 @@ func NewPlugin_Override(p Plugin, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.plugin.Plugin",
+		"@cdktn/provider-docker.plugin.Plugin",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -742,7 +742,7 @@ func Plugin_GenerateConfigForImport(scope constructs.Construct, importToId *stri
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.plugin.Plugin",
+		"@cdktn/provider-docker.plugin.Plugin",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -777,7 +777,7 @@ func Plugin_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.plugin.Plugin",
+		"@cdktn/provider-docker.plugin.Plugin",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -796,7 +796,7 @@ func Plugin_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.plugin.Plugin",
+		"@cdktn/provider-docker.plugin.Plugin",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -815,7 +815,7 @@ func Plugin_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.plugin.Plugin",
+		"@cdktn/provider-docker.plugin.Plugin",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -828,7 +828,7 @@ func Plugin_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-docker.plugin.Plugin",
+		"@cdktn/provider-docker.plugin.Plugin",
 		"tfResourceType",
 		&returns,
 	)

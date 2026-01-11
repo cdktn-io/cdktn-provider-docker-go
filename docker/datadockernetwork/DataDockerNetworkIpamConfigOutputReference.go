@@ -5,9 +5,9 @@ package datadockernetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/datadockernetwork/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/datadockernetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -203,7 +203,7 @@ func NewDataDockerNetworkIpamConfigOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DataDockerNetworkIpamConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetworkIpamConfigOutputReference",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetworkIpamConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewDataDockerNetworkIpamConfigOutputReference_Override(d DataDockerNetworkI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetworkIpamConfigOutputReference",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetworkIpamConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

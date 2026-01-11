@@ -5,9 +5,9 @@ package service
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/service/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/service/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -183,7 +183,7 @@ func NewServiceTaskSpecContainerSpecMountsBindOptionsOutputReference(terraformRe
 	j := jsiiProxy_ServiceTaskSpecContainerSpecMountsBindOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecMountsBindOptionsOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecMountsBindOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -195,7 +195,7 @@ func NewServiceTaskSpecContainerSpecMountsBindOptionsOutputReference_Override(s 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecMountsBindOptionsOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecMountsBindOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.volume.Volume",
+		"@cdktn/provider-docker.volume.Volume",
 		reflect.TypeOf((*Volume)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.volume.VolumeConfig",
+		"@cdktn/provider-docker.volume.VolumeConfig",
 		reflect.TypeOf((*VolumeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.volume.VolumeLabels",
+		"@cdktn/provider-docker.volume.VolumeLabels",
 		reflect.TypeOf((*VolumeLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.volume.VolumeLabelsList",
+		"@cdktn/provider-docker.volume.VolumeLabelsList",
 		reflect.TypeOf((*VolumeLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.volume.VolumeLabelsOutputReference",
+		"@cdktn/provider-docker.volume.VolumeLabelsOutputReference",
 		reflect.TypeOf((*VolumeLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -5,9 +5,9 @@ package datadockerregistryimagemanifests
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/datadockerregistryimagemanifests/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/datadockerregistryimagemanifests/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -112,7 +112,7 @@ func NewDataDockerRegistryImageManifestsManifestsList(terraformResource cdktf.II
 	j := jsiiProxy_DataDockerRegistryImageManifestsManifestsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.dataDockerRegistryImageManifests.DataDockerRegistryImageManifestsManifestsList",
+		"@cdktn/provider-docker.dataDockerRegistryImageManifests.DataDockerRegistryImageManifestsManifestsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -124,7 +124,7 @@ func NewDataDockerRegistryImageManifestsManifestsList_Override(d DataDockerRegis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.dataDockerRegistryImageManifests.DataDockerRegistryImageManifestsManifestsList",
+		"@cdktn/provider-docker.dataDockerRegistryImageManifests.DataDockerRegistryImageManifestsManifestsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

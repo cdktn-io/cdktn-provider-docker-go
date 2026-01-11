@@ -5,10 +5,10 @@ package datadockerplugin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/datadockerplugin/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/datadockerplugin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -354,7 +354,7 @@ func NewDataDockerPlugin(scope constructs.Construct, id *string, config *DataDoc
 	j := jsiiProxy_DataDockerPlugin{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.dataDockerPlugin.DataDockerPlugin",
+		"@cdktn/provider-docker.dataDockerPlugin.DataDockerPlugin",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewDataDockerPlugin_Override(d DataDockerPlugin, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.dataDockerPlugin.DataDockerPlugin",
+		"@cdktn/provider-docker.dataDockerPlugin.DataDockerPlugin",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -451,7 +451,7 @@ func DataDockerPlugin_GenerateConfigForImport(scope constructs.Construct, import
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerPlugin.DataDockerPlugin",
+		"@cdktn/provider-docker.dataDockerPlugin.DataDockerPlugin",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -486,7 +486,7 @@ func DataDockerPlugin_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerPlugin.DataDockerPlugin",
+		"@cdktn/provider-docker.dataDockerPlugin.DataDockerPlugin",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func DataDockerPlugin_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerPlugin.DataDockerPlugin",
+		"@cdktn/provider-docker.dataDockerPlugin.DataDockerPlugin",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataDockerPlugin_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerPlugin.DataDockerPlugin",
+		"@cdktn/provider-docker.dataDockerPlugin.DataDockerPlugin",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataDockerPlugin_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-docker.dataDockerPlugin.DataDockerPlugin",
+		"@cdktn/provider-docker.dataDockerPlugin.DataDockerPlugin",
 		"tfResourceType",
 		&returns,
 	)

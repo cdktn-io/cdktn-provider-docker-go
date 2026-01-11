@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.plugin.Plugin",
+		"@cdktn/provider-docker.plugin.Plugin",
 		reflect.TypeOf((*Plugin)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -94,15 +94,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.plugin.PluginConfig",
+		"@cdktn/provider-docker.plugin.PluginConfig",
 		reflect.TypeOf((*PluginConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.plugin.PluginGrantPermissions",
+		"@cdktn/provider-docker.plugin.PluginGrantPermissions",
 		reflect.TypeOf((*PluginGrantPermissions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.plugin.PluginGrantPermissionsList",
+		"@cdktn/provider-docker.plugin.PluginGrantPermissionsList",
 		reflect.TypeOf((*PluginGrantPermissionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -124,7 +124,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.plugin.PluginGrantPermissionsOutputReference",
+		"@cdktn/provider-docker.plugin.PluginGrantPermissionsOutputReference",
 		reflect.TypeOf((*PluginGrantPermissionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

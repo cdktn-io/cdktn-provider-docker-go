@@ -5,10 +5,10 @@ package registryimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/registryimage/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/registryimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -450,7 +450,7 @@ func NewRegistryImage(scope constructs.Construct, id *string, config *RegistryIm
 	j := jsiiProxy_RegistryImage{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.registryImage.RegistryImage",
+		"@cdktn/provider-docker.registryImage.RegistryImage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewRegistryImage_Override(r RegistryImage, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.registryImage.RegistryImage",
+		"@cdktn/provider-docker.registryImage.RegistryImage",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -602,7 +602,7 @@ func RegistryImage_GenerateConfigForImport(scope constructs.Construct, importToI
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.registryImage.RegistryImage",
+		"@cdktn/provider-docker.registryImage.RegistryImage",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -637,7 +637,7 @@ func RegistryImage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.registryImage.RegistryImage",
+		"@cdktn/provider-docker.registryImage.RegistryImage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func RegistryImage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.registryImage.RegistryImage",
+		"@cdktn/provider-docker.registryImage.RegistryImage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -675,7 +675,7 @@ func RegistryImage_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.registryImage.RegistryImage",
+		"@cdktn/provider-docker.registryImage.RegistryImage",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func RegistryImage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-docker.registryImage.RegistryImage",
+		"@cdktn/provider-docker.registryImage.RegistryImage",
 		"tfResourceType",
 		&returns,
 	)

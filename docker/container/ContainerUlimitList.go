@@ -5,9 +5,9 @@ package container
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/container/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/container/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -124,7 +124,7 @@ func NewContainerUlimitList(terraformResource cdktf.IInterpolatingParent, terraf
 	j := jsiiProxy_ContainerUlimitList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.container.ContainerUlimitList",
+		"@cdktn/provider-docker.container.ContainerUlimitList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -136,7 +136,7 @@ func NewContainerUlimitList_Override(c ContainerUlimitList, terraformResource cd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.container.ContainerUlimitList",
+		"@cdktn/provider-docker.container.ContainerUlimitList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

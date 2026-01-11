@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.Container",
+		"@cdktn/provider-docker.container.Container",
 		reflect.TypeOf((*Container)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -277,11 +277,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerCapabilities",
+		"@cdktn/provider-docker.container.ContainerCapabilities",
 		reflect.TypeOf((*ContainerCapabilities)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerCapabilitiesOutputReference",
+		"@cdktn/provider-docker.container.ContainerCapabilitiesOutputReference",
 		reflect.TypeOf((*ContainerCapabilitiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "add", GoGetter: "Add"},
@@ -319,15 +319,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerConfig",
+		"@cdktn/provider-docker.container.ContainerConfig",
 		reflect.TypeOf((*ContainerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerDevices",
+		"@cdktn/provider-docker.container.ContainerDevices",
 		reflect.TypeOf((*ContainerDevices)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerDevicesList",
+		"@cdktn/provider-docker.container.ContainerDevicesList",
 		reflect.TypeOf((*ContainerDevicesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -349,7 +349,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerDevicesOutputReference",
+		"@cdktn/provider-docker.container.ContainerDevicesOutputReference",
 		reflect.TypeOf((*ContainerDevicesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -389,11 +389,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerHealthcheck",
+		"@cdktn/provider-docker.container.ContainerHealthcheck",
 		reflect.TypeOf((*ContainerHealthcheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerHealthcheckOutputReference",
+		"@cdktn/provider-docker.container.ContainerHealthcheckOutputReference",
 		reflect.TypeOf((*ContainerHealthcheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -442,11 +442,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerHost",
+		"@cdktn/provider-docker.container.ContainerHost",
 		reflect.TypeOf((*ContainerHost)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerHostList",
+		"@cdktn/provider-docker.container.ContainerHostList",
 		reflect.TypeOf((*ContainerHostList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -468,7 +468,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerHostOutputReference",
+		"@cdktn/provider-docker.container.ContainerHostOutputReference",
 		reflect.TypeOf((*ContainerHostOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -504,11 +504,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerLabels",
+		"@cdktn/provider-docker.container.ContainerLabels",
 		reflect.TypeOf((*ContainerLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerLabelsList",
+		"@cdktn/provider-docker.container.ContainerLabelsList",
 		reflect.TypeOf((*ContainerLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -530,7 +530,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerLabelsOutputReference",
+		"@cdktn/provider-docker.container.ContainerLabelsOutputReference",
 		reflect.TypeOf((*ContainerLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -566,15 +566,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerMounts",
+		"@cdktn/provider-docker.container.ContainerMounts",
 		reflect.TypeOf((*ContainerMounts)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerMountsBindOptions",
+		"@cdktn/provider-docker.container.ContainerMountsBindOptions",
 		reflect.TypeOf((*ContainerMountsBindOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerMountsBindOptionsOutputReference",
+		"@cdktn/provider-docker.container.ContainerMountsBindOptionsOutputReference",
 		reflect.TypeOf((*ContainerMountsBindOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -609,7 +609,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerMountsList",
+		"@cdktn/provider-docker.container.ContainerMountsList",
 		reflect.TypeOf((*ContainerMountsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -631,7 +631,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerMountsOutputReference",
+		"@cdktn/provider-docker.container.ContainerMountsOutputReference",
 		reflect.TypeOf((*ContainerMountsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bindOptions", GoGetter: "BindOptions"},
@@ -685,11 +685,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerMountsTmpfsOptions",
+		"@cdktn/provider-docker.container.ContainerMountsTmpfsOptions",
 		reflect.TypeOf((*ContainerMountsTmpfsOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerMountsTmpfsOptionsOutputReference",
+		"@cdktn/provider-docker.container.ContainerMountsTmpfsOptionsOutputReference",
 		reflect.TypeOf((*ContainerMountsTmpfsOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -727,15 +727,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerMountsVolumeOptions",
+		"@cdktn/provider-docker.container.ContainerMountsVolumeOptions",
 		reflect.TypeOf((*ContainerMountsVolumeOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerMountsVolumeOptionsLabels",
+		"@cdktn/provider-docker.container.ContainerMountsVolumeOptionsLabels",
 		reflect.TypeOf((*ContainerMountsVolumeOptionsLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerMountsVolumeOptionsLabelsList",
+		"@cdktn/provider-docker.container.ContainerMountsVolumeOptionsLabelsList",
 		reflect.TypeOf((*ContainerMountsVolumeOptionsLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -757,7 +757,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerMountsVolumeOptionsLabelsOutputReference",
+		"@cdktn/provider-docker.container.ContainerMountsVolumeOptionsLabelsOutputReference",
 		reflect.TypeOf((*ContainerMountsVolumeOptionsLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -793,7 +793,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerMountsVolumeOptionsOutputReference",
+		"@cdktn/provider-docker.container.ContainerMountsVolumeOptionsOutputReference",
 		reflect.TypeOf((*ContainerMountsVolumeOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -841,11 +841,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerNetworkData",
+		"@cdktn/provider-docker.container.ContainerNetworkData",
 		reflect.TypeOf((*ContainerNetworkData)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerNetworkDataList",
+		"@cdktn/provider-docker.container.ContainerNetworkDataList",
 		reflect.TypeOf((*ContainerNetworkDataList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -866,7 +866,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerNetworkDataOutputReference",
+		"@cdktn/provider-docker.container.ContainerNetworkDataOutputReference",
 		reflect.TypeOf((*ContainerNetworkDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -906,11 +906,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerNetworksAdvanced",
+		"@cdktn/provider-docker.container.ContainerNetworksAdvanced",
 		reflect.TypeOf((*ContainerNetworksAdvanced)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerNetworksAdvancedList",
+		"@cdktn/provider-docker.container.ContainerNetworksAdvancedList",
 		reflect.TypeOf((*ContainerNetworksAdvancedList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -932,7 +932,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerNetworksAdvancedOutputReference",
+		"@cdktn/provider-docker.container.ContainerNetworksAdvancedOutputReference",
 		reflect.TypeOf((*ContainerNetworksAdvancedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aliases", GoGetter: "Aliases"},
@@ -975,11 +975,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerPorts",
+		"@cdktn/provider-docker.container.ContainerPorts",
 		reflect.TypeOf((*ContainerPorts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerPortsList",
+		"@cdktn/provider-docker.container.ContainerPortsList",
 		reflect.TypeOf((*ContainerPortsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1001,7 +1001,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerPortsOutputReference",
+		"@cdktn/provider-docker.container.ContainerPortsOutputReference",
 		reflect.TypeOf((*ContainerPortsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1044,11 +1044,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerUlimit",
+		"@cdktn/provider-docker.container.ContainerUlimit",
 		reflect.TypeOf((*ContainerUlimit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerUlimitList",
+		"@cdktn/provider-docker.container.ContainerUlimitList",
 		reflect.TypeOf((*ContainerUlimitList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1070,7 +1070,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerUlimitOutputReference",
+		"@cdktn/provider-docker.container.ContainerUlimitOutputReference",
 		reflect.TypeOf((*ContainerUlimitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1108,11 +1108,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerUpload",
+		"@cdktn/provider-docker.container.ContainerUpload",
 		reflect.TypeOf((*ContainerUpload)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerUploadList",
+		"@cdktn/provider-docker.container.ContainerUploadList",
 		reflect.TypeOf((*ContainerUploadList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1134,7 +1134,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerUploadOutputReference",
+		"@cdktn/provider-docker.container.ContainerUploadOutputReference",
 		reflect.TypeOf((*ContainerUploadOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1186,11 +1186,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.container.ContainerVolumes",
+		"@cdktn/provider-docker.container.ContainerVolumes",
 		reflect.TypeOf((*ContainerVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerVolumesList",
+		"@cdktn/provider-docker.container.ContainerVolumesList",
 		reflect.TypeOf((*ContainerVolumesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1212,7 +1212,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.container.ContainerVolumesOutputReference",
+		"@cdktn/provider-docker.container.ContainerVolumesOutputReference",
 		reflect.TypeOf((*ContainerVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

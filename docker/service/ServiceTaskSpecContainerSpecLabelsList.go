@@ -5,9 +5,9 @@ package service
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/service/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/service/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -124,7 +124,7 @@ func NewServiceTaskSpecContainerSpecLabelsList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_ServiceTaskSpecContainerSpecLabelsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecLabelsList",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -136,7 +136,7 @@ func NewServiceTaskSpecContainerSpecLabelsList_Override(s ServiceTaskSpecContain
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecLabelsList",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

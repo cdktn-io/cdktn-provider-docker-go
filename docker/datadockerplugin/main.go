@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.dataDockerPlugin.DataDockerPlugin",
+		"@cdktn/provider-docker.dataDockerPlugin.DataDockerPlugin",
 		reflect.TypeOf((*DataDockerPlugin)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.dataDockerPlugin.DataDockerPluginConfig",
+		"@cdktn/provider-docker.dataDockerPlugin.DataDockerPluginConfig",
 		reflect.TypeOf((*DataDockerPluginConfig)(nil)).Elem(),
 	)
 }

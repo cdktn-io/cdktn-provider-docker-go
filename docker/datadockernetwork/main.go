@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetwork",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetwork",
 		reflect.TypeOf((*DataDockerNetwork)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetworkConfig",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetworkConfig",
 		reflect.TypeOf((*DataDockerNetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetworkIpamConfig",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetworkIpamConfig",
 		reflect.TypeOf((*DataDockerNetworkIpamConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetworkIpamConfigList",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetworkIpamConfigList",
 		reflect.TypeOf((*DataDockerNetworkIpamConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetworkIpamConfigOutputReference",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetworkIpamConfigOutputReference",
 		reflect.TypeOf((*DataDockerNetworkIpamConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auxAddress", GoGetter: "AuxAddress"},

@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilder",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilder",
 		reflect.TypeOf((*BuildxBuilder)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -111,15 +111,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderConfig",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderConfig",
 		reflect.TypeOf((*BuildxBuilderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderDockerContainer",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderDockerContainer",
 		reflect.TypeOf((*BuildxBuilderDockerContainer)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderDockerContainerOutputReference",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderDockerContainerOutputReference",
 		reflect.TypeOf((*BuildxBuilderDockerContainerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cgroupParent", GoGetter: "CgroupParent"},
@@ -190,15 +190,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderKubernetes",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderKubernetes",
 		reflect.TypeOf((*BuildxBuilderKubernetes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderKubernetesLimits",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderKubernetesLimits",
 		reflect.TypeOf((*BuildxBuilderKubernetesLimits)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderKubernetesLimitsOutputReference",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderKubernetesLimitsOutputReference",
 		reflect.TypeOf((*BuildxBuilderKubernetesLimitsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -239,7 +239,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderKubernetesOutputReference",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderKubernetesOutputReference",
 		reflect.TypeOf((*BuildxBuilderKubernetesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -322,11 +322,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderKubernetesQemu",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderKubernetesQemu",
 		reflect.TypeOf((*BuildxBuilderKubernetesQemu)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderKubernetesQemuOutputReference",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderKubernetesQemuOutputReference",
 		reflect.TypeOf((*BuildxBuilderKubernetesQemuOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -364,11 +364,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderKubernetesRequests",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderKubernetesRequests",
 		reflect.TypeOf((*BuildxBuilderKubernetesRequests)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderKubernetesRequestsOutputReference",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderKubernetesRequestsOutputReference",
 		reflect.TypeOf((*BuildxBuilderKubernetesRequestsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -409,11 +409,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderRemote",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderRemote",
 		reflect.TypeOf((*BuildxBuilderRemote)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderRemoteOutputReference",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderRemoteOutputReference",
 		reflect.TypeOf((*BuildxBuilderRemoteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cacert", GoGetter: "Cacert"},

@@ -5,9 +5,9 @@ package image
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/image/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/image/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -231,7 +231,7 @@ func NewImageTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_ImageTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.image.ImageTimeoutsOutputReference",
+		"@cdktn/provider-docker.image.ImageTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -243,7 +243,7 @@ func NewImageTimeoutsOutputReference_Override(i ImageTimeoutsOutputReference, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.image.ImageTimeoutsOutputReference",
+		"@cdktn/provider-docker.image.ImageTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

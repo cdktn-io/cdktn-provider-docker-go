@@ -5,10 +5,10 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/provider/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -412,7 +412,7 @@ func NewDockerProvider(scope constructs.Construct, id *string, config *DockerPro
 	j := jsiiProxy_DockerProvider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.provider.DockerProvider",
+		"@cdktn/provider-docker.provider.DockerProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -425,7 +425,7 @@ func NewDockerProvider_Override(d DockerProvider, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.provider.DockerProvider",
+		"@cdktn/provider-docker.provider.DockerProvider",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -527,7 +527,7 @@ func DockerProvider_GenerateConfigForImport(scope constructs.Construct, importTo
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.provider.DockerProvider",
+		"@cdktn/provider-docker.provider.DockerProvider",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -562,7 +562,7 @@ func DockerProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.provider.DockerProvider",
+		"@cdktn/provider-docker.provider.DockerProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -581,7 +581,7 @@ func DockerProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.provider.DockerProvider",
+		"@cdktn/provider-docker.provider.DockerProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func DockerProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.provider.DockerProvider",
+		"@cdktn/provider-docker.provider.DockerProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func DockerProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-docker.provider.DockerProvider",
+		"@cdktn/provider-docker.provider.DockerProvider",
 		"tfResourceType",
 		&returns,
 	)

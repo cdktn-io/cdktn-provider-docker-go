@@ -5,9 +5,9 @@ package datadockernetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/datadockernetwork/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/datadockernetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -112,7 +112,7 @@ func NewDataDockerNetworkIpamConfigList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_DataDockerNetworkIpamConfigList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetworkIpamConfigList",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetworkIpamConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -124,7 +124,7 @@ func NewDataDockerNetworkIpamConfigList_Override(d DataDockerNetworkIpamConfigLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetworkIpamConfigList",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetworkIpamConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

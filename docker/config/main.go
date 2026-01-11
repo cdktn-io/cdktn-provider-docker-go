@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.config.Config",
+		"@cdktn/provider-docker.config.Config",
 		reflect.TypeOf((*Config)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -70,7 +70,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.config.ConfigConfig",
+		"@cdktn/provider-docker.config.ConfigConfig",
 		reflect.TypeOf((*ConfigConfig)(nil)).Elem(),
 	)
 }

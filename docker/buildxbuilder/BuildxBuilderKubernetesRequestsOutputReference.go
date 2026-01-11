@@ -5,9 +5,9 @@ package buildxbuilder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/buildxbuilder/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/buildxbuilder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -231,7 +231,7 @@ func NewBuildxBuilderKubernetesRequestsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_BuildxBuilderKubernetesRequestsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderKubernetesRequestsOutputReference",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderKubernetesRequestsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -243,7 +243,7 @@ func NewBuildxBuilderKubernetesRequestsOutputReference_Override(b BuildxBuilderK
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderKubernetesRequestsOutputReference",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderKubernetesRequestsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

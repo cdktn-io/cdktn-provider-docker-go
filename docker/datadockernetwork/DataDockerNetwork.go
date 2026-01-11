@@ -5,10 +5,10 @@ package datadockernetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/datadockernetwork/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/datadockernetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -340,7 +340,7 @@ func NewDataDockerNetwork(scope constructs.Construct, id *string, config *DataDo
 	j := jsiiProxy_DataDockerNetwork{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetwork",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetwork",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -353,7 +353,7 @@ func NewDataDockerNetwork_Override(d DataDockerNetwork, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetwork",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetwork",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataDockerNetwork_GenerateConfigForImport(scope constructs.Construct, impor
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetwork",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetwork",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -461,7 +461,7 @@ func DataDockerNetwork_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetwork",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetwork",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataDockerNetwork_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetwork",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetwork",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataDockerNetwork_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetwork",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetwork",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataDockerNetwork_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-docker.dataDockerNetwork.DataDockerNetwork",
+		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetwork",
 		"tfResourceType",
 		&returns,
 	)

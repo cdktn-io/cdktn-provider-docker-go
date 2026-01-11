@@ -5,9 +5,9 @@ package network
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/network/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/network/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -205,7 +205,7 @@ func NewNetworkLabelsOutputReference(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_NetworkLabelsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.network.NetworkLabelsOutputReference",
+		"@cdktn/provider-docker.network.NetworkLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -217,7 +217,7 @@ func NewNetworkLabelsOutputReference_Override(n NetworkLabelsOutputReference, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.network.NetworkLabelsOutputReference",
+		"@cdktn/provider-docker.network.NetworkLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

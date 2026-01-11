@@ -5,9 +5,9 @@ package image
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/image/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/image/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -228,7 +228,7 @@ func NewImageBuildUlimitOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_ImageBuildUlimitOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.image.ImageBuildUlimitOutputReference",
+		"@cdktn/provider-docker.image.ImageBuildUlimitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewImageBuildUlimitOutputReference_Override(i ImageBuildUlimitOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.image.ImageBuildUlimitOutputReference",
+		"@cdktn/provider-docker.image.ImageBuildUlimitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

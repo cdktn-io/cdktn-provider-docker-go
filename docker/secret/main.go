@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.secret.Secret",
+		"@cdktn/provider-docker.secret.Secret",
 		reflect.TypeOf((*Secret)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.secret.SecretConfig",
+		"@cdktn/provider-docker.secret.SecretConfig",
 		reflect.TypeOf((*SecretConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.secret.SecretLabels",
+		"@cdktn/provider-docker.secret.SecretLabels",
 		reflect.TypeOf((*SecretLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.secret.SecretLabelsList",
+		"@cdktn/provider-docker.secret.SecretLabelsList",
 		reflect.TypeOf((*SecretLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -104,7 +104,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.secret.SecretLabelsOutputReference",
+		"@cdktn/provider-docker.secret.SecretLabelsOutputReference",
 		reflect.TypeOf((*SecretLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

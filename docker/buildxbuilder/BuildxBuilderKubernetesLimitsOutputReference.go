@@ -5,9 +5,9 @@ package buildxbuilder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/buildxbuilder/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/buildxbuilder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -231,7 +231,7 @@ func NewBuildxBuilderKubernetesLimitsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_BuildxBuilderKubernetesLimitsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderKubernetesLimitsOutputReference",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderKubernetesLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -243,7 +243,7 @@ func NewBuildxBuilderKubernetesLimitsOutputReference_Override(b BuildxBuilderKub
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.buildxBuilder.BuildxBuilderKubernetesLimitsOutputReference",
+		"@cdktn/provider-docker.buildxBuilder.BuildxBuilderKubernetesLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

@@ -5,9 +5,9 @@ package container
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/container/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/container/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -124,7 +124,7 @@ func NewContainerMountsList(terraformResource cdktf.IInterpolatingParent, terraf
 	j := jsiiProxy_ContainerMountsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.container.ContainerMountsList",
+		"@cdktn/provider-docker.container.ContainerMountsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -136,7 +136,7 @@ func NewContainerMountsList_Override(c ContainerMountsList, terraformResource cd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.container.ContainerMountsList",
+		"@cdktn/provider-docker.container.ContainerMountsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

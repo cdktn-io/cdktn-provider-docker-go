@@ -5,9 +5,9 @@ package container
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/container/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/container/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -207,7 +207,7 @@ func NewContainerMountsTmpfsOptionsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ContainerMountsTmpfsOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.container.ContainerMountsTmpfsOptionsOutputReference",
+		"@cdktn/provider-docker.container.ContainerMountsTmpfsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -219,7 +219,7 @@ func NewContainerMountsTmpfsOptionsOutputReference_Override(c ContainerMountsTmp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.container.ContainerMountsTmpfsOptionsOutputReference",
+		"@cdktn/provider-docker.container.ContainerMountsTmpfsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

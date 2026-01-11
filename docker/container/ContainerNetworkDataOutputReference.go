@@ -5,9 +5,9 @@ package container
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/container/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/container/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -247,7 +247,7 @@ func NewContainerNetworkDataOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_ContainerNetworkDataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.container.ContainerNetworkDataOutputReference",
+		"@cdktn/provider-docker.container.ContainerNetworkDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -259,7 +259,7 @@ func NewContainerNetworkDataOutputReference_Override(c ContainerNetworkDataOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.container.ContainerNetworkDataOutputReference",
+		"@cdktn/provider-docker.container.ContainerNetworkDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

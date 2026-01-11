@@ -5,10 +5,10 @@ package datadockerimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/datadockerimage/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/datadockerimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -309,7 +309,7 @@ func NewDataDockerImage(scope constructs.Construct, id *string, config *DataDock
 	j := jsiiProxy_DataDockerImage{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.dataDockerImage.DataDockerImage",
+		"@cdktn/provider-docker.dataDockerImage.DataDockerImage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -322,7 +322,7 @@ func NewDataDockerImage_Override(d DataDockerImage, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.dataDockerImage.DataDockerImage",
+		"@cdktn/provider-docker.dataDockerImage.DataDockerImage",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -406,7 +406,7 @@ func DataDockerImage_GenerateConfigForImport(scope constructs.Construct, importT
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerImage.DataDockerImage",
+		"@cdktn/provider-docker.dataDockerImage.DataDockerImage",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -441,7 +441,7 @@ func DataDockerImage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerImage.DataDockerImage",
+		"@cdktn/provider-docker.dataDockerImage.DataDockerImage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -460,7 +460,7 @@ func DataDockerImage_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerImage.DataDockerImage",
+		"@cdktn/provider-docker.dataDockerImage.DataDockerImage",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -479,7 +479,7 @@ func DataDockerImage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerImage.DataDockerImage",
+		"@cdktn/provider-docker.dataDockerImage.DataDockerImage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func DataDockerImage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-docker.dataDockerImage.DataDockerImage",
+		"@cdktn/provider-docker.dataDockerImage.DataDockerImage",
 		"tfResourceType",
 		&returns,
 	)

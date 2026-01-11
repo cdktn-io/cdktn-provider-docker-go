@@ -5,10 +5,10 @@ package secret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/secret/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/secret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -390,7 +390,7 @@ func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Sec
 	j := jsiiProxy_Secret{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.secret.Secret",
+		"@cdktn/provider-docker.secret.Secret",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewSecret_Override(s Secret, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.secret.Secret",
+		"@cdktn/provider-docker.secret.Secret",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -520,7 +520,7 @@ func Secret_GenerateConfigForImport(scope constructs.Construct, importToId *stri
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.secret.Secret",
+		"@cdktn/provider-docker.secret.Secret",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -555,7 +555,7 @@ func Secret_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.secret.Secret",
+		"@cdktn/provider-docker.secret.Secret",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func Secret_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.secret.Secret",
+		"@cdktn/provider-docker.secret.Secret",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -593,7 +593,7 @@ func Secret_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.secret.Secret",
+		"@cdktn/provider-docker.secret.Secret",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func Secret_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-docker.secret.Secret",
+		"@cdktn/provider-docker.secret.Secret",
 		"tfResourceType",
 		&returns,
 	)

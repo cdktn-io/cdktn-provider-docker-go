@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.registryImage.RegistryImage",
+		"@cdktn/provider-docker.registryImage.RegistryImage",
 		reflect.TypeOf((*RegistryImage)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -82,11 +82,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.registryImage.RegistryImageAuthConfig",
+		"@cdktn/provider-docker.registryImage.RegistryImageAuthConfig",
 		reflect.TypeOf((*RegistryImageAuthConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.registryImage.RegistryImageAuthConfigOutputReference",
+		"@cdktn/provider-docker.registryImage.RegistryImageAuthConfigOutputReference",
 		reflect.TypeOf((*RegistryImageAuthConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -124,7 +124,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.registryImage.RegistryImageConfig",
+		"@cdktn/provider-docker.registryImage.RegistryImageConfig",
 		reflect.TypeOf((*RegistryImageConfig)(nil)).Elem(),
 	)
 }

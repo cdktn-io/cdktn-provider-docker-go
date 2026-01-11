@@ -5,10 +5,10 @@ package container
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/container/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/container/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1946,7 +1946,7 @@ func NewContainer(scope constructs.Construct, id *string, config *ContainerConfi
 	j := jsiiProxy_Container{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.container.Container",
+		"@cdktn/provider-docker.container.Container",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1959,7 +1959,7 @@ func NewContainer_Override(c Container, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.container.Container",
+		"@cdktn/provider-docker.container.Container",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -2659,7 +2659,7 @@ func Container_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.container.Container",
+		"@cdktn/provider-docker.container.Container",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -2694,7 +2694,7 @@ func Container_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.container.Container",
+		"@cdktn/provider-docker.container.Container",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -2713,7 +2713,7 @@ func Container_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.container.Container",
+		"@cdktn/provider-docker.container.Container",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -2732,7 +2732,7 @@ func Container_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.container.Container",
+		"@cdktn/provider-docker.container.Container",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -2745,7 +2745,7 @@ func Container_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-docker.container.Container",
+		"@cdktn/provider-docker.container.Container",
 		"tfResourceType",
 		&returns,
 	)

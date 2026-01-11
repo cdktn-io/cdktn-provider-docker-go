@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.tag.Tag",
+		"@cdktn/provider-docker.tag.Tag",
 		reflect.TypeOf((*Tag)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -74,7 +74,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.tag.TagConfig",
+		"@cdktn/provider-docker.tag.TagConfig",
 		reflect.TypeOf((*TagConfig)(nil)).Elem(),
 	)
 }

@@ -5,9 +5,9 @@ package service
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/service/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/service/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -206,7 +206,7 @@ func NewServiceTaskSpecLogDriverOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ServiceTaskSpecLogDriverOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.service.ServiceTaskSpecLogDriverOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecLogDriverOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -218,7 +218,7 @@ func NewServiceTaskSpecLogDriverOutputReference_Override(s ServiceTaskSpecLogDri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.service.ServiceTaskSpecLogDriverOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecLogDriverOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

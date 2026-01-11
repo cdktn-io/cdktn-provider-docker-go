@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.dataDockerLogs.DataDockerLogs",
+		"@cdktn/provider-docker.dataDockerLogs.DataDockerLogs",
 		reflect.TypeOf((*DataDockerLogs)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.dataDockerLogs.DataDockerLogsConfig",
+		"@cdktn/provider-docker.dataDockerLogs.DataDockerLogsConfig",
 		reflect.TypeOf((*DataDockerLogsConfig)(nil)).Elem(),
 	)
 }

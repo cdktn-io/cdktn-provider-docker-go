@@ -5,10 +5,10 @@ package volume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/volume/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/volume/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -427,7 +427,7 @@ func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Vol
 	j := jsiiProxy_Volume{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.volume.Volume",
+		"@cdktn/provider-docker.volume.Volume",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -440,7 +440,7 @@ func NewVolume_Override(v Volume, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.volume.Volume",
+		"@cdktn/provider-docker.volume.Volume",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -568,7 +568,7 @@ func Volume_GenerateConfigForImport(scope constructs.Construct, importToId *stri
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.volume.Volume",
+		"@cdktn/provider-docker.volume.Volume",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -603,7 +603,7 @@ func Volume_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.volume.Volume",
+		"@cdktn/provider-docker.volume.Volume",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func Volume_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.volume.Volume",
+		"@cdktn/provider-docker.volume.Volume",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func Volume_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.volume.Volume",
+		"@cdktn/provider-docker.volume.Volume",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func Volume_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-docker.volume.Volume",
+		"@cdktn/provider-docker.volume.Volume",
 		"tfResourceType",
 		&returns,
 	)

@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.image.Image",
+		"@cdktn/provider-docker.image.Image",
 		reflect.TypeOf((*Image)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -91,15 +91,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.image.ImageBuild",
+		"@cdktn/provider-docker.image.ImageBuild",
 		reflect.TypeOf((*ImageBuild)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.image.ImageBuildAuthConfig",
+		"@cdktn/provider-docker.image.ImageBuildAuthConfig",
 		reflect.TypeOf((*ImageBuildAuthConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.image.ImageBuildAuthConfigList",
+		"@cdktn/provider-docker.image.ImageBuildAuthConfigList",
 		reflect.TypeOf((*ImageBuildAuthConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -121,7 +121,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.image.ImageBuildAuthConfigOutputReference",
+		"@cdktn/provider-docker.image.ImageBuildAuthConfigOutputReference",
 		reflect.TypeOf((*ImageBuildAuthConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auth", GoGetter: "Auth"},
@@ -176,7 +176,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.image.ImageBuildOutputReference",
+		"@cdktn/provider-docker.image.ImageBuildOutputReference",
 		reflect.TypeOf((*ImageBuildOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authConfig", GoGetter: "AuthConfig"},
@@ -321,11 +321,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.image.ImageBuildSecrets",
+		"@cdktn/provider-docker.image.ImageBuildSecrets",
 		reflect.TypeOf((*ImageBuildSecrets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.image.ImageBuildSecretsList",
+		"@cdktn/provider-docker.image.ImageBuildSecretsList",
 		reflect.TypeOf((*ImageBuildSecretsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -347,7 +347,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.image.ImageBuildSecretsOutputReference",
+		"@cdktn/provider-docker.image.ImageBuildSecretsOutputReference",
 		reflect.TypeOf((*ImageBuildSecretsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -387,11 +387,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.image.ImageBuildUlimit",
+		"@cdktn/provider-docker.image.ImageBuildUlimit",
 		reflect.TypeOf((*ImageBuildUlimit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.image.ImageBuildUlimitList",
+		"@cdktn/provider-docker.image.ImageBuildUlimitList",
 		reflect.TypeOf((*ImageBuildUlimitList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -413,7 +413,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.image.ImageBuildUlimitOutputReference",
+		"@cdktn/provider-docker.image.ImageBuildUlimitOutputReference",
 		reflect.TypeOf((*ImageBuildUlimitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -451,15 +451,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.image.ImageConfig",
+		"@cdktn/provider-docker.image.ImageConfig",
 		reflect.TypeOf((*ImageConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.image.ImageTimeouts",
+		"@cdktn/provider-docker.image.ImageTimeouts",
 		reflect.TypeOf((*ImageTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.image.ImageTimeoutsOutputReference",
+		"@cdktn/provider-docker.image.ImageTimeoutsOutputReference",
 		reflect.TypeOf((*ImageTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

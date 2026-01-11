@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.network.Network",
+		"@cdktn/provider-docker.network.Network",
 		reflect.TypeOf((*Network)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -104,15 +104,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.network.NetworkConfig",
+		"@cdktn/provider-docker.network.NetworkConfig",
 		reflect.TypeOf((*NetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.network.NetworkIpamConfig",
+		"@cdktn/provider-docker.network.NetworkIpamConfig",
 		reflect.TypeOf((*NetworkIpamConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.network.NetworkIpamConfigList",
+		"@cdktn/provider-docker.network.NetworkIpamConfigList",
 		reflect.TypeOf((*NetworkIpamConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -134,7 +134,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.network.NetworkIpamConfigOutputReference",
+		"@cdktn/provider-docker.network.NetworkIpamConfigOutputReference",
 		reflect.TypeOf((*NetworkIpamConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auxAddress", GoGetter: "AuxAddress"},
@@ -178,11 +178,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.network.NetworkLabels",
+		"@cdktn/provider-docker.network.NetworkLabels",
 		reflect.TypeOf((*NetworkLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.network.NetworkLabelsList",
+		"@cdktn/provider-docker.network.NetworkLabelsList",
 		reflect.TypeOf((*NetworkLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -204,7 +204,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.network.NetworkLabelsOutputReference",
+		"@cdktn/provider-docker.network.NetworkLabelsOutputReference",
 		reflect.TypeOf((*NetworkLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

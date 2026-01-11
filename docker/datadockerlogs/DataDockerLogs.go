@@ -5,10 +5,10 @@ package datadockerlogs
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/datadockerlogs/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/datadockerlogs/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -549,7 +549,7 @@ func NewDataDockerLogs(scope constructs.Construct, id *string, config *DataDocke
 	j := jsiiProxy_DataDockerLogs{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.dataDockerLogs.DataDockerLogs",
+		"@cdktn/provider-docker.dataDockerLogs.DataDockerLogs",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -562,7 +562,7 @@ func NewDataDockerLogs_Override(d DataDockerLogs, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.dataDockerLogs.DataDockerLogs",
+		"@cdktn/provider-docker.dataDockerLogs.DataDockerLogs",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -756,7 +756,7 @@ func DataDockerLogs_GenerateConfigForImport(scope constructs.Construct, importTo
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerLogs.DataDockerLogs",
+		"@cdktn/provider-docker.dataDockerLogs.DataDockerLogs",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -791,7 +791,7 @@ func DataDockerLogs_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerLogs.DataDockerLogs",
+		"@cdktn/provider-docker.dataDockerLogs.DataDockerLogs",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -810,7 +810,7 @@ func DataDockerLogs_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerLogs.DataDockerLogs",
+		"@cdktn/provider-docker.dataDockerLogs.DataDockerLogs",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -829,7 +829,7 @@ func DataDockerLogs_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-docker.dataDockerLogs.DataDockerLogs",
+		"@cdktn/provider-docker.dataDockerLogs.DataDockerLogs",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -842,7 +842,7 @@ func DataDockerLogs_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-docker.dataDockerLogs.DataDockerLogs",
+		"@cdktn/provider-docker.dataDockerLogs.DataDockerLogs",
 		"tfResourceType",
 		&returns,
 	)

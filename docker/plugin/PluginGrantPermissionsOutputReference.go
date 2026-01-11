@@ -5,9 +5,9 @@ package plugin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/plugin/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/plugin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -205,7 +205,7 @@ func NewPluginGrantPermissionsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_PluginGrantPermissionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.plugin.PluginGrantPermissionsOutputReference",
+		"@cdktn/provider-docker.plugin.PluginGrantPermissionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -217,7 +217,7 @@ func NewPluginGrantPermissionsOutputReference_Override(p PluginGrantPermissionsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.plugin.PluginGrantPermissionsOutputReference",
+		"@cdktn/provider-docker.plugin.PluginGrantPermissionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

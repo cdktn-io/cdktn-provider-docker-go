@@ -5,9 +5,9 @@ package volume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/volume/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/volume/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -124,7 +124,7 @@ func NewVolumeLabelsList(terraformResource cdktf.IInterpolatingParent, terraform
 	j := jsiiProxy_VolumeLabelsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.volume.VolumeLabelsList",
+		"@cdktn/provider-docker.volume.VolumeLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -136,7 +136,7 @@ func NewVolumeLabelsList_Override(v VolumeLabelsList, terraformResource cdktf.II
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.volume.VolumeLabelsList",
+		"@cdktn/provider-docker.volume.VolumeLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)

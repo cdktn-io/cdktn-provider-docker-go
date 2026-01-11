@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.Service",
+		"@cdktn/provider-docker.service.Service",
 		reflect.TypeOf((*Service)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -99,11 +99,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceAuth",
+		"@cdktn/provider-docker.service.ServiceAuth",
 		reflect.TypeOf((*ServiceAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceAuthOutputReference",
+		"@cdktn/provider-docker.service.ServiceAuthOutputReference",
 		reflect.TypeOf((*ServiceAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -143,15 +143,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceConfig",
+		"@cdktn/provider-docker.service.ServiceConfig",
 		reflect.TypeOf((*ServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceConvergeConfig",
+		"@cdktn/provider-docker.service.ServiceConvergeConfig",
 		reflect.TypeOf((*ServiceConvergeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceConvergeConfigOutputReference",
+		"@cdktn/provider-docker.service.ServiceConvergeConfigOutputReference",
 		reflect.TypeOf((*ServiceConvergeConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -189,11 +189,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceEndpointSpec",
+		"@cdktn/provider-docker.service.ServiceEndpointSpec",
 		reflect.TypeOf((*ServiceEndpointSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceEndpointSpecOutputReference",
+		"@cdktn/provider-docker.service.ServiceEndpointSpecOutputReference",
 		reflect.TypeOf((*ServiceEndpointSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -232,11 +232,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceEndpointSpecPorts",
+		"@cdktn/provider-docker.service.ServiceEndpointSpecPorts",
 		reflect.TypeOf((*ServiceEndpointSpecPorts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceEndpointSpecPortsList",
+		"@cdktn/provider-docker.service.ServiceEndpointSpecPortsList",
 		reflect.TypeOf((*ServiceEndpointSpecPortsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -258,7 +258,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceEndpointSpecPortsOutputReference",
+		"@cdktn/provider-docker.service.ServiceEndpointSpecPortsOutputReference",
 		reflect.TypeOf((*ServiceEndpointSpecPortsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -304,11 +304,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceLabels",
+		"@cdktn/provider-docker.service.ServiceLabels",
 		reflect.TypeOf((*ServiceLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceLabelsList",
+		"@cdktn/provider-docker.service.ServiceLabelsList",
 		reflect.TypeOf((*ServiceLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -330,7 +330,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceLabelsOutputReference",
+		"@cdktn/provider-docker.service.ServiceLabelsOutputReference",
 		reflect.TypeOf((*ServiceLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -366,11 +366,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceMode",
+		"@cdktn/provider-docker.service.ServiceMode",
 		reflect.TypeOf((*ServiceMode)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceModeOutputReference",
+		"@cdktn/provider-docker.service.ServiceModeOutputReference",
 		reflect.TypeOf((*ServiceModeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -409,11 +409,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceModeReplicated",
+		"@cdktn/provider-docker.service.ServiceModeReplicated",
 		reflect.TypeOf((*ServiceModeReplicated)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceModeReplicatedOutputReference",
+		"@cdktn/provider-docker.service.ServiceModeReplicatedOutputReference",
 		reflect.TypeOf((*ServiceModeReplicatedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -448,11 +448,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceRollbackConfig",
+		"@cdktn/provider-docker.service.ServiceRollbackConfig",
 		reflect.TypeOf((*ServiceRollbackConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceRollbackConfigOutputReference",
+		"@cdktn/provider-docker.service.ServiceRollbackConfigOutputReference",
 		reflect.TypeOf((*ServiceRollbackConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -502,19 +502,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpec",
+		"@cdktn/provider-docker.service.ServiceTaskSpec",
 		reflect.TypeOf((*ServiceTaskSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpec",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpec",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecConfigs",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecConfigs",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecConfigsList",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecConfigsList",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -536,7 +536,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecConfigsOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecConfigsOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -584,11 +584,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecDnsConfig",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecDnsConfig",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecDnsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecDnsConfigOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecDnsConfigOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecDnsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -628,11 +628,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecHealthcheck",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecHealthcheck",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecHealthcheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecHealthcheckOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecHealthcheckOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecHealthcheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -678,11 +678,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecHosts",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecHosts",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecHosts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecHostsList",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecHostsList",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecHostsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -704,7 +704,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecHostsOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecHostsOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecHostsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -740,11 +740,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecLabels",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecLabels",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecLabelsList",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecLabelsList",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -766,7 +766,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecLabelsOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecLabelsOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -802,15 +802,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecMounts",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecMounts",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecMounts)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecMountsBindOptions",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecMountsBindOptions",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecMountsBindOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecMountsBindOptionsOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecMountsBindOptionsOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecMountsBindOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -845,7 +845,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecMountsList",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecMountsList",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecMountsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -867,7 +867,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecMountsOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecMountsOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecMountsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bindOptions", GoGetter: "BindOptions"},
@@ -921,11 +921,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecMountsTmpfsOptions",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecMountsTmpfsOptions",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecMountsTmpfsOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecMountsTmpfsOptionsOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecMountsTmpfsOptionsOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecMountsTmpfsOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -963,15 +963,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecMountsVolumeOptions",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecMountsVolumeOptions",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecMountsVolumeOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecMountsVolumeOptionsLabels",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecMountsVolumeOptionsLabels",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecMountsVolumeOptionsLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecMountsVolumeOptionsLabelsList",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecMountsVolumeOptionsLabelsList",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecMountsVolumeOptionsLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -993,7 +993,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecMountsVolumeOptionsLabelsOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecMountsVolumeOptionsLabelsOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecMountsVolumeOptionsLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1029,7 +1029,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecMountsVolumeOptionsOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecMountsVolumeOptionsOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecMountsVolumeOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1074,7 +1074,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
@@ -1182,15 +1182,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecPrivileges",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecPrivileges",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecPrivileges)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecPrivilegesCredentialSpec",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecPrivilegesCredentialSpec",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecPrivilegesCredentialSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecPrivilegesCredentialSpecOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecPrivilegesCredentialSpecOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecPrivilegesCredentialSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1228,7 +1228,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecPrivilegesOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecPrivilegesOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecPrivilegesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1268,11 +1268,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecPrivilegesSeLinuxContext",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecPrivilegesSeLinuxContext",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecPrivilegesSeLinuxContext)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1319,11 +1319,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecSecrets",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecSecrets",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecSecrets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecSecretsList",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecSecretsList",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecSecretsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1345,7 +1345,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecContainerSpecSecretsOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecContainerSpecSecretsOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecContainerSpecSecretsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1393,11 +1393,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecLogDriver",
+		"@cdktn/provider-docker.service.ServiceTaskSpecLogDriver",
 		reflect.TypeOf((*ServiceTaskSpecLogDriver)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecLogDriverOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecLogDriverOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecLogDriverOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1434,11 +1434,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecNetworksAdvanced",
+		"@cdktn/provider-docker.service.ServiceTaskSpecNetworksAdvanced",
 		reflect.TypeOf((*ServiceTaskSpecNetworksAdvanced)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecNetworksAdvancedList",
+		"@cdktn/provider-docker.service.ServiceTaskSpecNetworksAdvancedList",
 		reflect.TypeOf((*ServiceTaskSpecNetworksAdvancedList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1460,7 +1460,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecNetworksAdvancedOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecNetworksAdvancedOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecNetworksAdvancedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aliases", GoGetter: "Aliases"},
@@ -1500,7 +1500,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1561,11 +1561,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecPlacement",
+		"@cdktn/provider-docker.service.ServiceTaskSpecPlacement",
 		reflect.TypeOf((*ServiceTaskSpecPlacement)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecPlacementOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecPlacementOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecPlacementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1610,11 +1610,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecPlacementPlatforms",
+		"@cdktn/provider-docker.service.ServiceTaskSpecPlacementPlatforms",
 		reflect.TypeOf((*ServiceTaskSpecPlacementPlatforms)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecPlacementPlatformsList",
+		"@cdktn/provider-docker.service.ServiceTaskSpecPlacementPlatformsList",
 		reflect.TypeOf((*ServiceTaskSpecPlacementPlatformsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1636,7 +1636,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecPlacementPlatformsOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecPlacementPlatformsOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecPlacementPlatformsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "architecture", GoGetter: "Architecture"},
@@ -1672,15 +1672,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecResources",
+		"@cdktn/provider-docker.service.ServiceTaskSpecResources",
 		reflect.TypeOf((*ServiceTaskSpecResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecResourcesLimits",
+		"@cdktn/provider-docker.service.ServiceTaskSpecResourcesLimits",
 		reflect.TypeOf((*ServiceTaskSpecResourcesLimits)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecResourcesLimitsOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecResourcesLimitsOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecResourcesLimitsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1718,7 +1718,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecResourcesOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecResourcesOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1758,15 +1758,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecResourcesReservation",
+		"@cdktn/provider-docker.service.ServiceTaskSpecResourcesReservation",
 		reflect.TypeOf((*ServiceTaskSpecResourcesReservation)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecResourcesReservationGenericResources",
+		"@cdktn/provider-docker.service.ServiceTaskSpecResourcesReservationGenericResources",
 		reflect.TypeOf((*ServiceTaskSpecResourcesReservationGenericResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecResourcesReservationGenericResourcesOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecResourcesReservationGenericResourcesOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecResourcesReservationGenericResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1804,7 +1804,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecResourcesReservationOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecResourcesReservationOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecResourcesReservationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1846,11 +1846,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceTaskSpecRestartPolicy",
+		"@cdktn/provider-docker.service.ServiceTaskSpecRestartPolicy",
 		reflect.TypeOf((*ServiceTaskSpecRestartPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceTaskSpecRestartPolicyOutputReference",
+		"@cdktn/provider-docker.service.ServiceTaskSpecRestartPolicyOutputReference",
 		reflect.TypeOf((*ServiceTaskSpecRestartPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1894,11 +1894,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.service.ServiceUpdateConfig",
+		"@cdktn/provider-docker.service.ServiceUpdateConfig",
 		reflect.TypeOf((*ServiceUpdateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.service.ServiceUpdateConfigOutputReference",
+		"@cdktn/provider-docker.service.ServiceUpdateConfigOutputReference",
 		reflect.TypeOf((*ServiceUpdateConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -5,9 +5,9 @@ package container
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/container/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/container/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -205,7 +205,7 @@ func NewContainerMountsVolumeOptionsLabelsOutputReference(terraformResource cdkt
 	j := jsiiProxy_ContainerMountsVolumeOptionsLabelsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.container.ContainerMountsVolumeOptionsLabelsOutputReference",
+		"@cdktn/provider-docker.container.ContainerMountsVolumeOptionsLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -217,7 +217,7 @@ func NewContainerMountsVolumeOptionsLabelsOutputReference_Override(c ContainerMo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.container.ContainerMountsVolumeOptionsLabelsOutputReference",
+		"@cdktn/provider-docker.container.ContainerMountsVolumeOptionsLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

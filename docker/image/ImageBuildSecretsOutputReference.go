@@ -5,9 +5,9 @@ package image
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/image/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/image/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -230,7 +230,7 @@ func NewImageBuildSecretsOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_ImageBuildSecretsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.image.ImageBuildSecretsOutputReference",
+		"@cdktn/provider-docker.image.ImageBuildSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -242,7 +242,7 @@ func NewImageBuildSecretsOutputReference_Override(i ImageBuildSecretsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.image.ImageBuildSecretsOutputReference",
+		"@cdktn/provider-docker.image.ImageBuildSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

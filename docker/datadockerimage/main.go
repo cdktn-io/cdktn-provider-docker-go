@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-docker.dataDockerImage.DataDockerImage",
+		"@cdktn/provider-docker.dataDockerImage.DataDockerImage",
 		reflect.TypeOf((*DataDockerImage)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-docker.dataDockerImage.DataDockerImageConfig",
+		"@cdktn/provider-docker.dataDockerImage.DataDockerImageConfig",
 		reflect.TypeOf((*DataDockerImageConfig)(nil)).Elem(),
 	)
 }

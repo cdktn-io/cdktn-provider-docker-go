@@ -5,9 +5,9 @@ package registryimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-docker-go/docker/v12/registryimage/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/registryimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -228,7 +228,7 @@ func NewRegistryImageAuthConfigOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_RegistryImageAuthConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.registryImage.RegistryImageAuthConfigOutputReference",
+		"@cdktn/provider-docker.registryImage.RegistryImageAuthConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRegistryImageAuthConfigOutputReference_Override(r RegistryImageAuthConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-docker.registryImage.RegistryImageAuthConfigOutputReference",
+		"@cdktn/provider-docker.registryImage.RegistryImageAuthConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
