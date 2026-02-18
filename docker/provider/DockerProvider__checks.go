@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -11,7 +11,7 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DockerProvider) validateAddOverrideParameters(path *string, value interface{}) error {
@@ -80,11 +80,11 @@ func (j *jsiiProxy_DockerProvider) validateSetDisableDockerDaemonCheckParameters
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -93,7 +93,7 @@ func (j *jsiiProxy_DockerProvider) validateSetDisableDockerDaemonCheckParameters
 
 func (j *jsiiProxy_DockerProvider) validateSetRegistryAuthParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DockerProviderRegistryAuth:
 		val := val.(*[]*DockerProviderRegistryAuth)
@@ -112,7 +112,7 @@ func (j *jsiiProxy_DockerProvider) validateSetRegistryAuthParameters(val interfa
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*DockerProviderRegistryAuth; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*DockerProviderRegistryAuth; received %#v (a %T)", val, val)
 		}
 	}
 

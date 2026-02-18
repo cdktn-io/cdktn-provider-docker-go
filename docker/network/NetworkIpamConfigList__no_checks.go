@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkIpamConfigList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (n *jsiiProxy_NetworkIpamConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkIpamConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_NetworkIpamConfigList) validateSetTerraformAttributeParameter
 	return nil
 }
 
-func (j *jsiiProxy_NetworkIpamConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkIpamConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_NetworkIpamConfigList) validateSetWrapsSetParameters(val *boo
 	return nil
 }
 
-func validateNewNetworkIpamConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkIpamConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

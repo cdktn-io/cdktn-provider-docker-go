@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package service
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/service/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/service/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ServiceTaskSpecContainerSpecDnsConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,15 +46,15 @@ type ServiceTaskSpecContainerSpecDnsConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,14 +70,14 @@ type ServiceTaskSpecContainerSpecDnsConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetOptions()
 	ResetSearch()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type ServiceTaskSpecContainerSpecDnsConfigOutputReference interface {
 
 // The jsii proxy struct for ServiceTaskSpecContainerSpecDnsConfigOutputReference
 type jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -210,8 +210,8 @@ func (j *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) Terrafo
 }
 
 
-func NewServiceTaskSpecContainerSpecDnsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceTaskSpecContainerSpecDnsConfigOutputReference {
+func NewServiceTaskSpecContainerSpecDnsConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ServiceTaskSpecContainerSpecDnsConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewServiceTaskSpecContainerSpecDnsConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -238,7 +238,7 @@ func NewServiceTaskSpecContainerSpecDnsConfigOutputReference(terraformResource c
 	return &j
 }
 
-func NewServiceTaskSpecContainerSpecDnsConfigOutputReference_Override(s ServiceTaskSpecContainerSpecDnsConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewServiceTaskSpecContainerSpecDnsConfigOutputReference_Override(s ServiceTaskSpecContainerSpecDnsConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
@@ -325,7 +325,7 @@ func (j *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,11 +365,11 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) GetAnyM
 	return returns
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -493,8 +493,8 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) GetStri
 	return returns
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -506,11 +506,11 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) Interpo
 	return returns
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -538,7 +538,7 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) ResetSe
 	)
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecDnsConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

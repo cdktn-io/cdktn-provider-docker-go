@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_ContainerMountsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -126,7 +126,7 @@ func (c *jsiiProxy_ContainerMountsOutputReference) validatePutVolumeOptionsParam
 	return nil
 }
 
-func (c *jsiiProxy_ContainerMountsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerMountsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -201,7 +201,7 @@ func (j *jsiiProxy_ContainerMountsOutputReference) validateSetComplexObjectIsFro
 
 func (j *jsiiProxy_ContainerMountsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *ContainerMounts:
 		val := val.(*ContainerMounts)
@@ -216,7 +216,7 @@ func (j *jsiiProxy_ContainerMountsOutputReference) validateSetInternalValueParam
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ContainerMounts; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *ContainerMounts; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -232,11 +232,11 @@ func (j *jsiiProxy_ContainerMountsOutputReference) validateSetReadOnlyParameters
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -267,7 +267,7 @@ func (j *jsiiProxy_ContainerMountsOutputReference) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_ContainerMountsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerMountsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_ContainerMountsOutputReference) validateSetTypeParameters(val
 	return nil
 }
 
-func validateNewContainerMountsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewContainerMountsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

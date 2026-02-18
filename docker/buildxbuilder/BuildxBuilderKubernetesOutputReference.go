@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package buildxbuilder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/buildxbuilder/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/buildxbuilder/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type BuildxBuilderKubernetesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Annotations() *string
 	SetAnnotations(val *string)
 	AnnotationsInput() *string
@@ -76,9 +76,9 @@ type BuildxBuilderKubernetesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Timeout() *string
 	SetTimeout(val *string)
 	TimeoutInput() *string
@@ -90,7 +90,7 @@ type BuildxBuilderKubernetesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -106,9 +106,9 @@ type BuildxBuilderKubernetesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutLimits(value *BuildxBuilderKubernetesLimits)
 	PutQemu(value *BuildxBuilderKubernetesQemu)
 	PutRequests(value *BuildxBuilderKubernetesRequests)
@@ -130,7 +130,7 @@ type BuildxBuilderKubernetesOutputReference interface {
 	ResetTolerations()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -140,7 +140,7 @@ type BuildxBuilderKubernetesOutputReference interface {
 
 // The jsii proxy struct for BuildxBuilderKubernetesOutputReference
 type jsiiProxy_BuildxBuilderKubernetesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BuildxBuilderKubernetesOutputReference) Annotations() *string {
@@ -483,8 +483,8 @@ func (j *jsiiProxy_BuildxBuilderKubernetesOutputReference) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_BuildxBuilderKubernetesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BuildxBuilderKubernetesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -534,7 +534,7 @@ func (j *jsiiProxy_BuildxBuilderKubernetesOutputReference) TolerationsInput() *s
 }
 
 
-func NewBuildxBuilderKubernetesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BuildxBuilderKubernetesOutputReference {
+func NewBuildxBuilderKubernetesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BuildxBuilderKubernetesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBuildxBuilderKubernetesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -551,7 +551,7 @@ func NewBuildxBuilderKubernetesOutputReference(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewBuildxBuilderKubernetesOutputReference_Override(b BuildxBuilderKubernetesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBuildxBuilderKubernetesOutputReference_Override(b BuildxBuilderKubernetesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
@@ -726,7 +726,7 @@ func (j *jsiiProxy_BuildxBuilderKubernetesOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_BuildxBuilderKubernetesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BuildxBuilderKubernetesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,11 +788,11 @@ func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) GetAnyMapAttribute(te
 	return returns
 }
 
-func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -916,8 +916,8 @@ func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) GetStringMapAttribute
 	return returns
 }
 
-func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -929,11 +929,11 @@ func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -1106,7 +1106,7 @@ func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) ResetTolerations() {
 	)
 }
 
-func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BuildxBuilderKubernetesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

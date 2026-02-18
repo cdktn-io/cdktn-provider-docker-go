@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package registryimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/registryimage/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/registryimage/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type RegistryImageAuthConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Address() *string
 	SetAddress(val *string)
 	AddressInput() *string
@@ -43,9 +43,9 @@ type RegistryImageAuthConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -54,7 +54,7 @@ type RegistryImageAuthConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,12 +70,12 @@ type RegistryImageAuthConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type RegistryImageAuthConfigOutputReference interface {
 
 // The jsii proxy struct for RegistryImageAuthConfigOutputReference
 type jsiiProxy_RegistryImageAuthConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_RegistryImageAuthConfigOutputReference) Address() *string {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_RegistryImageAuthConfigOutputReference) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_RegistryImageAuthConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RegistryImageAuthConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_RegistryImageAuthConfigOutputReference) UsernameInput() *stri
 }
 
 
-func NewRegistryImageAuthConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RegistryImageAuthConfigOutputReference {
+func NewRegistryImageAuthConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) RegistryImageAuthConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRegistryImageAuthConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -236,7 +236,7 @@ func NewRegistryImageAuthConfigOutputReference(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewRegistryImageAuthConfigOutputReference_Override(r RegistryImageAuthConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRegistryImageAuthConfigOutputReference_Override(r RegistryImageAuthConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
@@ -312,7 +312,7 @@ func (j *jsiiProxy_RegistryImageAuthConfigOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_RegistryImageAuthConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RegistryImageAuthConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) GetAnyMapAttribute(te
 	return returns
 }
 
-func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -491,8 +491,8 @@ func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) GetStringMapAttribute
 	return returns
 }
 
-func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -504,11 +504,11 @@ func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -520,7 +520,7 @@ func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) InterpolationForAttri
 	return returns
 }
 
-func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

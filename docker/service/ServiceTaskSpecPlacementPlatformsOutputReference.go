@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package service
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/service/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/service/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ServiceTaskSpecPlacementPlatformsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Architecture() *string
 	SetArchitecture(val *string)
 	ArchitectureInput() *string
@@ -43,15 +43,15 @@ type ServiceTaskSpecPlacementPlatformsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type ServiceTaskSpecPlacementPlatformsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type ServiceTaskSpecPlacementPlatformsOutputReference interface {
 
 // The jsii proxy struct for ServiceTaskSpecPlacementPlatformsOutputReference
 type jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) Architecture() *string {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -196,7 +196,7 @@ func (j *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) TerraformRe
 }
 
 
-func NewServiceTaskSpecPlacementPlatformsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceTaskSpecPlacementPlatformsOutputReference {
+func NewServiceTaskSpecPlacementPlatformsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceTaskSpecPlacementPlatformsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewServiceTaskSpecPlacementPlatformsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -213,7 +213,7 @@ func NewServiceTaskSpecPlacementPlatformsOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewServiceTaskSpecPlacementPlatformsOutputReference_Override(s ServiceTaskSpecPlacementPlatformsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewServiceTaskSpecPlacementPlatformsOutputReference_Override(s ServiceTaskSpecPlacementPlatformsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
@@ -289,7 +289,7 @@ func (j *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,11 +329,11 @@ func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -457,8 +457,8 @@ func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) GetStringMa
 	return returns
 }
 
-func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -470,11 +470,11 @@ func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) Interpolati
 	return returns
 }
 
-func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -486,7 +486,7 @@ func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) Interpolati
 	return returns
 }
 
-func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceTaskSpecPlacementPlatformsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

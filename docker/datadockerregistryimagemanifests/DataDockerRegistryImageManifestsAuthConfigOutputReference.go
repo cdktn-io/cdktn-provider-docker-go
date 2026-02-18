@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadockerregistryimagemanifests
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/datadockerregistryimagemanifests/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/datadockerregistryimagemanifests/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDockerRegistryImageManifestsAuthConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Address() *string
 	SetAddress(val *string)
 	AddressInput() *string
@@ -43,9 +43,9 @@ type DataDockerRegistryImageManifestsAuthConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -54,7 +54,7 @@ type DataDockerRegistryImageManifestsAuthConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,12 +70,12 @@ type DataDockerRegistryImageManifestsAuthConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type DataDockerRegistryImageManifestsAuthConfigOutputReference interface {
 
 // The jsii proxy struct for DataDockerRegistryImageManifestsAuthConfigOutputReference
 type jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) Address() *string {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) Us
 }
 
 
-func NewDataDockerRegistryImageManifestsAuthConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDockerRegistryImageManifestsAuthConfigOutputReference {
+func NewDataDockerRegistryImageManifestsAuthConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDockerRegistryImageManifestsAuthConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDockerRegistryImageManifestsAuthConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -236,7 +236,7 @@ func NewDataDockerRegistryImageManifestsAuthConfigOutputReference(terraformResou
 	return &j
 }
 
-func NewDataDockerRegistryImageManifestsAuthConfigOutputReference_Override(d DataDockerRegistryImageManifestsAuthConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDockerRegistryImageManifestsAuthConfigOutputReference_Override(d DataDockerRegistryImageManifestsAuthConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
@@ -312,7 +312,7 @@ func (j *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -491,8 +491,8 @@ func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -504,11 +504,11 @@ func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) In
 	return returns
 }
 
-func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -520,7 +520,7 @@ func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) In
 	return returns
 }
 
-func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

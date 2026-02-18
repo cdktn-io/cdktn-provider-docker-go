@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (i *jsiiProxy_ImageBuildUlimitList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (i *jsiiProxy_ImageBuildUlimitList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImageBuildUlimitList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_ImageBuildUlimitList) validateSetTerraformAttributeParameters
 	return nil
 }
 
-func (j *jsiiProxy_ImageBuildUlimitList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ImageBuildUlimitList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_ImageBuildUlimitList) validateSetWrapsSetParameters(val *bool
 	return nil
 }
 
-func validateNewImageBuildUlimitListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewImageBuildUlimitListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

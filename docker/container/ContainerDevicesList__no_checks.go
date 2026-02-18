@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerDevicesList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (c *jsiiProxy_ContainerDevicesList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerDevicesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_ContainerDevicesList) validateSetTerraformAttributeParameters
 	return nil
 }
 
-func (j *jsiiProxy_ContainerDevicesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerDevicesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_ContainerDevicesList) validateSetWrapsSetParameters(val *bool
 	return nil
 }
 
-func validateNewContainerDevicesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewContainerDevicesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

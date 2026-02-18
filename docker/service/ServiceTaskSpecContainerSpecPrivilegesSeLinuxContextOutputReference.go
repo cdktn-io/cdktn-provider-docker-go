@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package service
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/service/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/service/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,9 +46,9 @@ type ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -60,7 +60,7 @@ type ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference interfa
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDisable()
 	ResetLevel()
 	ResetRole()
@@ -86,7 +86,7 @@ type ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference interfa
 	ResetUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference interfa
 
 // The jsii proxy struct for ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference
 type jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference) ComplexObjectIndex() interface{} {
@@ -219,8 +219,8 @@ func (j *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -270,7 +270,7 @@ func (j *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputRef
 }
 
 
-func NewServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference {
+func NewServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -287,7 +287,7 @@ func NewServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference(terr
 	return &j
 }
 
-func NewServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference_Override(s ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference_Override(s ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
@@ -374,7 +374,7 @@ func (j *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputRef
 	)
 }
 
-func (j *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,11 +436,11 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputRef
 	return returns
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -564,8 +564,8 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputRef
 	return returns
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -577,11 +577,11 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputRef
 	return returns
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -633,7 +633,7 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputRef
 	)
 }
 
-func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

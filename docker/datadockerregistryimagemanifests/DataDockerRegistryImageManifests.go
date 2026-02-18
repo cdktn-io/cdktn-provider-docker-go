@@ -1,24 +1,24 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadockerregistryimagemanifests
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/datadockerregistryimagemanifests/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/datadockerregistryimagemanifests/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/data-sources/registry_image_manifests docker_registry_image_manifests}.
 type DataDockerRegistryImageManifests interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AuthConfig() DataDockerRegistryImageManifestsAuthConfigOutputReference
 	AuthConfigInput() *DataDockerRegistryImageManifestsAuthConfig
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -30,9 +30,9 @@ type DataDockerRegistryImageManifests interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -44,9 +44,9 @@ type DataDockerRegistryImageManifests interface {
 	SetInsecureSkipVerify(val interface{})
 	InsecureSkipVerifyInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Manifests() DataDockerRegistryImageManifestsManifestsList
 	Name() *string
 	SetName(val *string)
@@ -54,13 +54,13 @@ type DataDockerRegistryImageManifests interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -70,7 +70,7 @@ type DataDockerRegistryImageManifests interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -86,7 +86,7 @@ type DataDockerRegistryImageManifests interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -113,7 +113,7 @@ type DataDockerRegistryImageManifests interface {
 
 // The jsii proxy struct for DataDockerRegistryImageManifests
 type jsiiProxy_DataDockerRegistryImageManifests struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataDockerRegistryImageManifests) AuthConfig() DataDockerRegistryImageManifestsAuthConfigOutputReference {
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DataDockerRegistryImageManifests) AuthConfigInput() *DataDock
 	return returns
 }
 
-func (j *jsiiProxy_DataDockerRegistryImageManifests) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDockerRegistryImageManifests) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_DataDockerRegistryImageManifests) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDockerRegistryImageManifests) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDockerRegistryImageManifests) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DataDockerRegistryImageManifests) InsecureSkipVerifyInput() i
 	return returns
 }
 
-func (j *jsiiProxy_DataDockerRegistryImageManifests) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDockerRegistryImageManifests) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_DataDockerRegistryImageManifests) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDockerRegistryImageManifests) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDockerRegistryImageManifests) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_DataDockerRegistryImageManifests) RawOverrides() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_DataDockerRegistryImageManifests) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDockerRegistryImageManifests) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -395,7 +395,7 @@ func (j *jsiiProxy_DataDockerRegistryImageManifests)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataDockerRegistryImageManifests)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDockerRegistryImageManifests)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -425,7 +425,7 @@ func (j *jsiiProxy_DataDockerRegistryImageManifests)SetInsecureSkipVerify(val in
 	)
 }
 
-func (j *jsiiProxy_DataDockerRegistryImageManifests)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDockerRegistryImageManifests)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +447,7 @@ func (j *jsiiProxy_DataDockerRegistryImageManifests)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDockerRegistryImageManifests)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDockerRegistryImageManifests)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -455,14 +455,14 @@ func (j *jsiiProxy_DataDockerRegistryImageManifests)SetProvider(val cdktf.Terraf
 	)
 }
 
-// Generates CDKTF code for importing a DataDockerRegistryImageManifests resource upon running "cdktf plan <stack-name>".
-func DataDockerRegistryImageManifests_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDockerRegistryImageManifests resource upon running "cdktn plan <stack-name>".
+func DataDockerRegistryImageManifests_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDockerRegistryImageManifests_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
 		"@cdktn/provider-docker.dataDockerRegistryImageManifests.DataDockerRegistryImageManifests",
@@ -585,11 +585,11 @@ func (d *jsiiProxy_DataDockerRegistryImageManifests) GetAnyMapAttribute(terrafor
 	return returns
 }
 
-func (d *jsiiProxy_DataDockerRegistryImageManifests) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDockerRegistryImageManifests) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -713,11 +713,11 @@ func (d *jsiiProxy_DataDockerRegistryImageManifests) GetStringMapAttribute(terra
 	return returns
 }
 
-func (d *jsiiProxy_DataDockerRegistryImageManifests) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDockerRegistryImageManifests) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

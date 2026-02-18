@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadockernetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v12/datadockernetwork/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/datadockernetwork/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/data-sources/network docker_network}.
 type DataDockerNetwork interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -29,35 +29,35 @@ type DataDockerNetwork interface {
 	SetDependsOn(val *[]*string)
 	Driver() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	Internal() cdktf.IResolvable
+	Internal() cdktn.IResolvable
 	IpamConfig() DataDockerNetworkIpamConfigList
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Options() cdktf.StringMap
+	Options() cdktn.StringMap
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	Scope() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -67,7 +67,7 @@ type DataDockerNetwork interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -83,7 +83,7 @@ type DataDockerNetwork interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -106,11 +106,11 @@ type DataDockerNetwork interface {
 
 // The jsii proxy struct for DataDockerNetwork
 type jsiiProxy_DataDockerNetwork struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDockerNetwork) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDockerNetwork) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataDockerNetwork) Driver() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDockerNetwork) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDockerNetwork) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_DataDockerNetwork) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDockerNetwork) Internal() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDockerNetwork) Internal() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"internal",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_DataDockerNetwork) IpamConfig() DataDockerNetworkIpamConfigLi
 	return returns
 }
 
-func (j *jsiiProxy_DataDockerNetwork) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDockerNetwork) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_DataDockerNetwork) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDockerNetwork) Options() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataDockerNetwork) Options() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"options",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_DataDockerNetwork) Options() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_DataDockerNetwork) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDockerNetwork) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_DataDockerNetwork) Scope() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDockerNetwork) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDockerNetwork) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DataDockerNetwork)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDockerNetwork)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDockerNetwork)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -386,7 +386,7 @@ func (j *jsiiProxy_DataDockerNetwork)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataDockerNetwork)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDockerNetwork)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +408,7 @@ func (j *jsiiProxy_DataDockerNetwork)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDockerNetwork)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDockerNetwork)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -416,14 +416,14 @@ func (j *jsiiProxy_DataDockerNetwork)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-// Generates CDKTF code for importing a DataDockerNetwork resource upon running "cdktf plan <stack-name>".
-func DataDockerNetwork_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDockerNetwork resource upon running "cdktn plan <stack-name>".
+func DataDockerNetwork_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDockerNetwork_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
 		"@cdktn/provider-docker.dataDockerNetwork.DataDockerNetwork",
@@ -546,11 +546,11 @@ func (d *jsiiProxy_DataDockerNetwork) GetAnyMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (d *jsiiProxy_DataDockerNetwork) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDockerNetwork) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -674,11 +674,11 @@ func (d *jsiiProxy_DataDockerNetwork) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (d *jsiiProxy_DataDockerNetwork) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDockerNetwork) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
