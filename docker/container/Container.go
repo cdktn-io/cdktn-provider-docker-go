@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/resources/container docker_container}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/container docker_container}.
 type Container interface {
 	cdktn.TerraformResource
 	Attach() interface{}
@@ -143,6 +143,9 @@ type Container interface {
 	Memory() *float64
 	SetMemory(val *float64)
 	MemoryInput() *float64
+	MemoryReservation() *float64
+	SetMemoryReservation(val *float64)
+	MemoryReservationInput() *float64
 	MemorySwap() *float64
 	SetMemorySwap(val *float64)
 	MemorySwapInput() *float64
@@ -342,6 +345,7 @@ type Container interface {
 	ResetLogs()
 	ResetMaxRetryCount()
 	ResetMemory()
+	ResetMemoryReservation()
 	ResetMemorySwap()
 	ResetMounts()
 	ResetMustRun()
@@ -388,6 +392,15 @@ type Container interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for Container
@@ -1195,6 +1208,26 @@ func (j *jsiiProxy_Container) MemoryInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Container) MemoryReservation() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"memoryReservation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Container) MemoryReservationInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"memoryReservationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Container) MemorySwap() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1936,7 +1969,7 @@ func (j *jsiiProxy_Container) WorkingDirInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/resources/container docker_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/container docker_container} Resource.
 func NewContainer(scope constructs.Construct, id *string, config *ContainerConfig) Container {
 	_init_.Initialize()
 
@@ -1954,7 +1987,7 @@ func NewContainer(scope constructs.Construct, id *string, config *ContainerConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/resources/container docker_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/container docker_container} Resource.
 func NewContainer_Override(c Container, scope constructs.Construct, id *string, config *ContainerConfig) {
 	_init_.Initialize()
 
@@ -2329,6 +2362,17 @@ func (j *jsiiProxy_Container)SetMemory(val *float64) {
 	_jsii_.Set(
 		j,
 		"memory",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Container)SetMemoryReservation(val *float64) {
+	if err := j.validateSetMemoryReservationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"memoryReservation",
 		val,
 	)
 }
@@ -3387,6 +3431,14 @@ func (c *jsiiProxy_Container) ResetMemory() {
 	)
 }
 
+func (c *jsiiProxy_Container) ResetMemoryReservation() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMemoryReservation",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_Container) ResetMemorySwap() {
 	_jsii_.InvokeVoid(
 		c,
@@ -3723,6 +3775,24 @@ func (c *jsiiProxy_Container) ToTerraform() interface{} {
 		c,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_Container) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		c,
+		"with",
+		args,
 		&returns,
 	)
 

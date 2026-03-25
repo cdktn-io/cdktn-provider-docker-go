@@ -12,11 +12,13 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/resources/volume docker_volume}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/volume docker_volume}.
 type Volume interface {
 	cdktn.TerraformResource
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	Cluster() VolumeClusterOutputReference
+	ClusterInput() *VolumeCluster
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -119,7 +121,9 @@ type Volume interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCluster(value *VolumeCluster)
 	PutLabels(value interface{})
+	ResetCluster()
 	ResetDriver()
 	ResetDriverOpts()
 	ResetId()
@@ -139,6 +143,15 @@ type Volume interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for Volume
@@ -151,6 +164,26 @@ func (j *jsiiProxy_Volume) CdktfStack() cdktn.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Volume) Cluster() VolumeClusterOutputReference {
+	var returns VolumeClusterOutputReference
+	_jsii_.Get(
+		j,
+		"cluster",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Volume) ClusterInput() *VolumeCluster {
+	var returns *VolumeCluster
+	_jsii_.Get(
+		j,
+		"clusterInput",
 		&returns,
 	)
 	return returns
@@ -417,7 +450,7 @@ func (j *jsiiProxy_Volume) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/resources/volume docker_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/volume docker_volume} Resource.
 func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Volume {
 	_init_.Initialize()
 
@@ -435,7 +468,7 @@ func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Vol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/resources/volume docker_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/volume docker_volume} Resource.
 func NewVolume_Override(v Volume, scope constructs.Construct, id *string, config *VolumeConfig) {
 	_init_.Initialize()
 
@@ -911,6 +944,17 @@ func (v *jsiiProxy_Volume) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (v *jsiiProxy_Volume) PutCluster(value *VolumeCluster) {
+	if err := v.validatePutClusterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putCluster",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_Volume) PutLabels(value interface{}) {
 	if err := v.validatePutLabelsParameters(value); err != nil {
 		panic(err)
@@ -919,6 +963,14 @@ func (v *jsiiProxy_Volume) PutLabels(value interface{}) {
 		v,
 		"putLabels",
 		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_Volume) ResetCluster() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetCluster",
+		nil, // no parameters
 	)
 }
 
@@ -1042,6 +1094,24 @@ func (v *jsiiProxy_Volume) ToTerraform() interface{} {
 		v,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (v *jsiiProxy_Volume) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		v,
+		"with",
+		args,
 		&returns,
 	)
 

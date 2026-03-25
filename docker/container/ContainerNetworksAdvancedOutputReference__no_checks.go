@@ -75,6 +75,10 @@ func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetIpv6Addr
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetMacAddressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }

@@ -12,11 +12,13 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/resources/registry_image docker_registry_image}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/registry_image docker_registry_image}.
 type RegistryImage interface {
 	cdktn.TerraformResource
 	AuthConfig() RegistryImageAuthConfigOutputReference
 	AuthConfigInput() *RegistryImageAuthConfig
+	BuildAttribute() RegistryImageBuildOutputReference
+	BuildAttributeInput() *RegistryImageBuild
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -76,6 +78,8 @@ type RegistryImage interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() RegistryImageTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Triggers() *map[string]*string
 	SetTriggers(val *map[string]*string)
 	TriggersInput() *map[string]*string
@@ -123,13 +127,17 @@ type RegistryImage interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthConfig(value *RegistryImageAuthConfig)
+	PutBuildAttribute(value *RegistryImageBuild)
+	PutTimeouts(value *RegistryImageTimeouts)
 	ResetAuthConfig()
+	ResetBuildAttribute()
 	ResetId()
 	ResetInsecureSkipVerify()
 	ResetKeepRemotely()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	ResetTriggers()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -142,6 +150,15 @@ type RegistryImage interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for RegistryImage
@@ -164,6 +181,26 @@ func (j *jsiiProxy_RegistryImage) AuthConfigInput() *RegistryImageAuthConfig {
 	_jsii_.Get(
 		j,
 		"authConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegistryImage) BuildAttribute() RegistryImageBuildOutputReference {
+	var returns RegistryImageBuildOutputReference
+	_jsii_.Get(
+		j,
+		"buildAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegistryImage) BuildAttributeInput() *RegistryImageBuild {
+	var returns *RegistryImageBuild
+	_jsii_.Get(
+		j,
+		"buildAttributeInput",
 		&returns,
 	)
 	return returns
@@ -419,6 +456,26 @@ func (j *jsiiProxy_RegistryImage) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RegistryImage) Timeouts() RegistryImageTimeoutsOutputReference {
+	var returns RegistryImageTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegistryImage) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RegistryImage) Triggers() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -440,7 +497,7 @@ func (j *jsiiProxy_RegistryImage) TriggersInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/resources/registry_image docker_registry_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/registry_image docker_registry_image} Resource.
 func NewRegistryImage(scope constructs.Construct, id *string, config *RegistryImageConfig) RegistryImage {
 	_init_.Initialize()
 
@@ -458,7 +515,7 @@ func NewRegistryImage(scope constructs.Construct, id *string, config *RegistryIm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/resources/registry_image docker_registry_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/registry_image docker_registry_image} Resource.
 func NewRegistryImage_Override(r RegistryImage, scope constructs.Construct, id *string, config *RegistryImageConfig) {
 	_init_.Initialize()
 
@@ -956,10 +1013,40 @@ func (r *jsiiProxy_RegistryImage) PutAuthConfig(value *RegistryImageAuthConfig) 
 	)
 }
 
+func (r *jsiiProxy_RegistryImage) PutBuildAttribute(value *RegistryImageBuild) {
+	if err := r.validatePutBuildAttributeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putBuildAttribute",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RegistryImage) PutTimeouts(value *RegistryImageTimeouts) {
+	if err := r.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RegistryImage) ResetAuthConfig() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetAuthConfig",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegistryImage) ResetBuildAttribute() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetBuildAttribute",
 		nil, // no parameters
 	)
 }
@@ -992,6 +1079,14 @@ func (r *jsiiProxy_RegistryImage) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegistryImage) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }
@@ -1076,6 +1171,24 @@ func (r *jsiiProxy_RegistryImage) ToTerraform() interface{} {
 		r,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RegistryImage) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		r,
+		"with",
+		args,
 		&returns,
 	)
 

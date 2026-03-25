@@ -91,6 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateConfig", GoGetter: "UpdateConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "updateConfigInput", GoGetter: "UpdateConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Service{}
@@ -657,6 +658,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetInterval", GoMethod: "ResetInterval"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetries", GoMethod: "ResetRetries"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStartPeriod", GoMethod: "ResetStartPeriod"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTest", GoMethod: "ResetTest"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "retries", GoGetter: "Retries"},

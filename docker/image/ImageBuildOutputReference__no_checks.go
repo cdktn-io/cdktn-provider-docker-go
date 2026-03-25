@@ -63,6 +63,10 @@ func (i *jsiiProxy_ImageBuildOutputReference) validateResolveParameters(context 
 	return nil
 }
 
+func (j *jsiiProxy_ImageBuildOutputReference) validateSetAdditionalContextsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImageBuildOutputReference) validateSetBuildArgsParameters(val *map[string]*string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (j *jsiiProxy_ImageBuildOutputReference) validateSetBuildLogFileParameters(
 }
 
 func (j *jsiiProxy_ImageBuildOutputReference) validateSetCacheFromParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ImageBuildOutputReference) validateSetCacheToParameters(val *[]*string) error {
 	return nil
 }
 

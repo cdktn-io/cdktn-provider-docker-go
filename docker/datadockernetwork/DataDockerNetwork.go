@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/data-sources/network docker_network}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/data-sources/network docker_network}.
 type DataDockerNetwork interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -102,6 +102,15 @@ type DataDockerNetwork interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDockerNetwork
@@ -330,7 +339,7 @@ func (j *jsiiProxy_DataDockerNetwork) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/data-sources/network docker_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/data-sources/network docker_network} Data Source.
 func NewDataDockerNetwork(scope constructs.Construct, id *string, config *DataDockerNetworkConfig) DataDockerNetwork {
 	_init_.Initialize()
 
@@ -348,7 +357,7 @@ func NewDataDockerNetwork(scope constructs.Construct, id *string, config *DataDo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/data-sources/network docker_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/data-sources/network docker_network} Data Source.
 func NewDataDockerNetwork_Override(d DataDockerNetwork, scope constructs.Construct, id *string, config *DataDockerNetworkConfig) {
 	_init_.Initialize()
 
@@ -781,6 +790,24 @@ func (d *jsiiProxy_DataDockerNetwork) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDockerNetwork) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

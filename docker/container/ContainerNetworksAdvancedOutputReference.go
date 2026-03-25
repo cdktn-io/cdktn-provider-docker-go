@@ -41,6 +41,9 @@ type ContainerNetworksAdvancedOutputReference interface {
 	Ipv6Address() *string
 	SetIpv6Address(val *string)
 	Ipv6AddressInput() *string
+	MacAddress() *string
+	SetMacAddress(val *string)
+	MacAddressInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -79,6 +82,7 @@ type ContainerNetworksAdvancedOutputReference interface {
 	ResetAliases()
 	ResetIpv4Address()
 	ResetIpv6Address()
+	ResetMacAddress()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -199,6 +203,26 @@ func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) Ipv6AddressInput() 
 	_jsii_.Get(
 		j,
 		"ipv6AddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) MacAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"macAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) MacAddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"macAddressInput",
 		&returns,
 	)
 	return returns
@@ -334,6 +358,17 @@ func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference)SetIpv6Address(val *
 	_jsii_.Set(
 		j,
 		"ipv6Address",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference)SetMacAddress(val *string) {
+	if err := j.validateSetMacAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"macAddress",
 		val,
 	)
 }
@@ -577,6 +612,14 @@ func (c *jsiiProxy_ContainerNetworksAdvancedOutputReference) ResetIpv6Address() 
 	_jsii_.InvokeVoid(
 		c,
 		"resetIpv6Address",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNetworksAdvancedOutputReference) ResetMacAddress() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMacAddress",
 		nil, // no parameters
 	)
 }

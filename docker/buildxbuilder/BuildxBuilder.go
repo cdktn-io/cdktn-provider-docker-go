@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/resources/buildx_builder docker_buildx_builder}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/buildx_builder docker_buildx_builder}.
 type BuildxBuilder interface {
 	cdktn.TerraformResource
 	Append() interface{}
@@ -178,6 +178,15 @@ type BuildxBuilder interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for BuildxBuilder
@@ -646,7 +655,7 @@ func (j *jsiiProxy_BuildxBuilder) UseInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/resources/buildx_builder docker_buildx_builder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/buildx_builder docker_buildx_builder} Resource.
 func NewBuildxBuilder(scope constructs.Construct, id *string, config *BuildxBuilderConfig) BuildxBuilder {
 	_init_.Initialize()
 
@@ -664,7 +673,7 @@ func NewBuildxBuilder(scope constructs.Construct, id *string, config *BuildxBuil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/resources/buildx_builder docker_buildx_builder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/buildx_builder docker_buildx_builder} Resource.
 func NewBuildxBuilder_Override(b BuildxBuilder, scope constructs.Construct, id *string, config *BuildxBuilderConfig) {
 	_init_.Initialize()
 
@@ -1461,6 +1470,24 @@ func (b *jsiiProxy_BuildxBuilder) ToTerraform() interface{} {
 		b,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BuildxBuilder) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		b,
+		"with",
+		args,
 		&returns,
 	)
 

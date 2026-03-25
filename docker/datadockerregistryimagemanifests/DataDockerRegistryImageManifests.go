@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/data-sources/registry_image_manifests docker_registry_image_manifests}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/data-sources/registry_image_manifests docker_registry_image_manifests}.
 type DataDockerRegistryImageManifests interface {
 	cdktn.TerraformDataSource
 	AuthConfig() DataDockerRegistryImageManifestsAuthConfigOutputReference
@@ -109,6 +109,15 @@ type DataDockerRegistryImageManifests interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDockerRegistryImageManifests
@@ -347,7 +356,7 @@ func (j *jsiiProxy_DataDockerRegistryImageManifests) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/data-sources/registry_image_manifests docker_registry_image_manifests} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/data-sources/registry_image_manifests docker_registry_image_manifests} Data Source.
 func NewDataDockerRegistryImageManifests(scope constructs.Construct, id *string, config *DataDockerRegistryImageManifestsConfig) DataDockerRegistryImageManifests {
 	_init_.Initialize()
 
@@ -365,7 +374,7 @@ func NewDataDockerRegistryImageManifests(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.6.2/docs/data-sources/registry_image_manifests docker_registry_image_manifests} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/data-sources/registry_image_manifests docker_registry_image_manifests} Data Source.
 func NewDataDockerRegistryImageManifests_Override(d DataDockerRegistryImageManifests, scope constructs.Construct, id *string, config *DataDockerRegistryImageManifestsConfig) {
 	_init_.Initialize()
 
@@ -855,6 +864,24 @@ func (d *jsiiProxy_DataDockerRegistryImageManifests) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDockerRegistryImageManifests) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -263,6 +263,10 @@ func (j *jsiiProxy_Container) validateSetMemoryParameters(val *float64) error {
 	return nil
 }
 
+func (j *jsiiProxy_Container) validateSetMemoryReservationParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Container) validateSetMemorySwapParameters(val *float64) error {
 	return nil
 }

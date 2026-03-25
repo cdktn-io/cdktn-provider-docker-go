@@ -75,6 +75,10 @@ func (v *jsiiProxy_Volume) validateOverrideLogicalIdParameters(newLogicalId *str
 	return nil
 }
 
+func (v *jsiiProxy_Volume) validatePutClusterParameters(value *VolumeCluster) error {
+	return nil
+}
+
 func (v *jsiiProxy_Volume) validatePutLabelsParameters(value interface{}) error {
 	return nil
 }

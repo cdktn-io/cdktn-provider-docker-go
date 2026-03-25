@@ -13,6 +13,9 @@ import (
 
 type ImageBuildOutputReference interface {
 	cdktn.ComplexObject
+	AdditionalContexts() *[]*string
+	SetAdditionalContexts(val *[]*string)
+	AdditionalContextsInput() *[]*string
 	AuthConfig() ImageBuildAuthConfigList
 	AuthConfigInput() interface{}
 	BuildArgs() *map[string]*string
@@ -30,6 +33,9 @@ type ImageBuildOutputReference interface {
 	CacheFrom() *[]*string
 	SetCacheFrom(val *[]*string)
 	CacheFromInput() *[]*string
+	CacheTo() *[]*string
+	SetCacheTo(val *[]*string)
+	CacheToInput() *[]*string
 	CgroupParent() *string
 	SetCgroupParent(val *string)
 	CgroupParentInput() *string
@@ -175,12 +181,14 @@ type ImageBuildOutputReference interface {
 	PutAuthConfig(value interface{})
 	PutSecrets(value interface{})
 	PutUlimit(value interface{})
+	ResetAdditionalContexts()
 	ResetAuthConfig()
 	ResetBuildArgs()
 	ResetBuilder()
 	ResetBuildId()
 	ResetBuildLogFile()
 	ResetCacheFrom()
+	ResetCacheTo()
 	ResetCgroupParent()
 	ResetCpuPeriod()
 	ResetCpuQuota()
@@ -224,6 +232,26 @@ type ImageBuildOutputReference interface {
 // The jsii proxy struct for ImageBuildOutputReference
 type jsiiProxy_ImageBuildOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ImageBuildOutputReference) AdditionalContexts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalContexts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageBuildOutputReference) AdditionalContextsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalContextsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ImageBuildOutputReference) AuthConfig() ImageBuildAuthConfigList {
@@ -341,6 +369,26 @@ func (j *jsiiProxy_ImageBuildOutputReference) CacheFromInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"cacheFromInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageBuildOutputReference) CacheTo() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"cacheTo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageBuildOutputReference) CacheToInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"cacheToInput",
 		&returns,
 	)
 	return returns
@@ -1064,6 +1112,17 @@ func NewImageBuildOutputReference_Override(i ImageBuildOutputReference, terrafor
 	)
 }
 
+func (j *jsiiProxy_ImageBuildOutputReference)SetAdditionalContexts(val *[]*string) {
+	if err := j.validateSetAdditionalContextsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalContexts",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ImageBuildOutputReference)SetBuildArgs(val *map[string]*string) {
 	if err := j.validateSetBuildArgsParameters(val); err != nil {
 		panic(err)
@@ -1115,6 +1174,17 @@ func (j *jsiiProxy_ImageBuildOutputReference)SetCacheFrom(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"cacheFrom",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ImageBuildOutputReference)SetCacheTo(val *[]*string) {
+	if err := j.validateSetCacheToParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cacheTo",
 		val,
 	)
 }
@@ -1712,6 +1782,14 @@ func (i *jsiiProxy_ImageBuildOutputReference) PutUlimit(value interface{}) {
 	)
 }
 
+func (i *jsiiProxy_ImageBuildOutputReference) ResetAdditionalContexts() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetAdditionalContexts",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_ImageBuildOutputReference) ResetAuthConfig() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1756,6 +1834,14 @@ func (i *jsiiProxy_ImageBuildOutputReference) ResetCacheFrom() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetCacheFrom",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImageBuildOutputReference) ResetCacheTo() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetCacheTo",
 		nil, // no parameters
 	)
 }

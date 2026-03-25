@@ -79,6 +79,14 @@ func (r *jsiiProxy_RegistryImage) validatePutAuthConfigParameters(value *Registr
 	return nil
 }
 
+func (r *jsiiProxy_RegistryImage) validatePutBuildAttributeParameters(value *RegistryImageBuild) error {
+	return nil
+}
+
+func (r *jsiiProxy_RegistryImage) validatePutTimeoutsParameters(value *RegistryImageTimeouts) error {
+	return nil
+}
+
 func validateRegistryImage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

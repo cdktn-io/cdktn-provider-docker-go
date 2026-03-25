@@ -82,6 +82,7 @@ type ServiceTaskSpecContainerSpecHealthcheckOutputReference interface {
 	ResetInterval()
 	ResetRetries()
 	ResetStartPeriod()
+	ResetTest()
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -612,6 +613,14 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecHealthcheckOutputReference) Reset
 	_jsii_.InvokeVoid(
 		s,
 		"resetStartPeriod",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecHealthcheckOutputReference) ResetTest() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTest",
 		nil, // no parameters
 	)
 }
