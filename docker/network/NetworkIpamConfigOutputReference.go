@@ -5,9 +5,9 @@ package network
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v13/network/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/network/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
