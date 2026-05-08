@@ -103,10 +103,6 @@ func (j *jsiiProxy_Network) validateSetAttachableParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_Network) validateSetCheckDuplicateParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_Network) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

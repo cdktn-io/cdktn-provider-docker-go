@@ -5,9 +5,9 @@ package image
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/image/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/image/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -151,6 +151,9 @@ type ImageBuildOutputReference interface {
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Ulimit() ImageBuildUlimitList
 	UlimitInput() interface{}
+	UseLegacyBuilder() interface{}
+	SetUseLegacyBuilder(val interface{})
+	UseLegacyBuilderInput() interface{}
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -218,6 +221,7 @@ type ImageBuildOutputReference interface {
 	ResetTag()
 	ResetTarget()
 	ResetUlimit()
+	ResetUseLegacyBuilder()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -1064,6 +1068,26 @@ func (j *jsiiProxy_ImageBuildOutputReference) UlimitInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ImageBuildOutputReference) UseLegacyBuilder() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useLegacyBuilder",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageBuildOutputReference) UseLegacyBuilderInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useLegacyBuilderInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ImageBuildOutputReference) Version() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1548,6 +1572,17 @@ func (j *jsiiProxy_ImageBuildOutputReference)SetTerraformResource(val cdktn.IInt
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ImageBuildOutputReference)SetUseLegacyBuilder(val interface{}) {
+	if err := j.validateSetUseLegacyBuilderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useLegacyBuilder",
 		val,
 	)
 }
@@ -2074,6 +2109,14 @@ func (i *jsiiProxy_ImageBuildOutputReference) ResetUlimit() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetUlimit",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImageBuildOutputReference) ResetUseLegacyBuilder() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetUseLegacyBuilder",
 		nil, // no parameters
 	)
 }

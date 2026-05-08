@@ -67,6 +67,10 @@ func (j *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference) validateSetDr
 	return nil
 }
 
+func (j *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference) validateSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

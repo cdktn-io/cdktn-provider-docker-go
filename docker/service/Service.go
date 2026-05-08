@@ -5,14 +5,14 @@ package service
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/service/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/service/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/service docker_service}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/service docker_service}.
 type Service interface {
 	cdktn.TerraformResource
 	Auth() ServiceAuthOutputReference
@@ -533,7 +533,7 @@ func (j *jsiiProxy_Service) UpdateConfigInput() *ServiceUpdateConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/service docker_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/service docker_service} Resource.
 func NewService(scope constructs.Construct, id *string, config *ServiceConfig) Service {
 	_init_.Initialize()
 
@@ -551,7 +551,7 @@ func NewService(scope constructs.Construct, id *string, config *ServiceConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/service docker_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/service docker_service} Resource.
 func NewService_Override(s Service, scope constructs.Construct, id *string, config *ServiceConfig) {
 	_init_.Initialize()
 

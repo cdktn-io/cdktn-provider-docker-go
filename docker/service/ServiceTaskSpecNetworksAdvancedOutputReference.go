@@ -5,9 +5,9 @@ package service
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/service/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/service/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -36,6 +36,9 @@ type ServiceTaskSpecNetworksAdvancedOutputReference interface {
 	DriverOptsInput() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Name() *string
@@ -75,6 +78,8 @@ type ServiceTaskSpecNetworksAdvancedOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAliases()
 	ResetDriverOpts()
+	ResetId()
+	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -165,6 +170,26 @@ func (j *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference) Fqn() *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
 		&returns,
 	)
 	return returns
@@ -288,6 +313,17 @@ func (j *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference)SetDriverOpts(
 	_jsii_.Set(
 		j,
 		"driverOpts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
 		val,
 	)
 }
@@ -534,6 +570,22 @@ func (s *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference) ResetDriverOp
 	_jsii_.InvokeVoid(
 		s,
 		"resetDriverOpts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference) ResetId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceTaskSpecNetworksAdvancedOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetName",
 		nil, // no parameters
 	)
 }

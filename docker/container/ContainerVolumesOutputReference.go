@@ -5,9 +5,9 @@ package container
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/container/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/container/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -44,6 +44,9 @@ type ContainerVolumesOutputReference interface {
 	ReadOnly() interface{}
 	SetReadOnly(val interface{})
 	ReadOnlyInput() interface{}
+	SelinuxRelabel() *string
+	SetSelinuxRelabel(val *string)
+	SelinuxRelabelInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -83,6 +86,7 @@ type ContainerVolumesOutputReference interface {
 	ResetFromContainer()
 	ResetHostPath()
 	ResetReadOnly()
+	ResetSelinuxRelabel()
 	ResetVolumeName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -229,6 +233,26 @@ func (j *jsiiProxy_ContainerVolumesOutputReference) ReadOnlyInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_ContainerVolumesOutputReference) SelinuxRelabel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selinuxRelabel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerVolumesOutputReference) SelinuxRelabelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selinuxRelabelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerVolumesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -370,6 +394,17 @@ func (j *jsiiProxy_ContainerVolumesOutputReference)SetReadOnly(val interface{}) 
 	_jsii_.Set(
 		j,
 		"readOnly",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerVolumesOutputReference)SetSelinuxRelabel(val *string) {
+	if err := j.validateSetSelinuxRelabelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"selinuxRelabel",
 		val,
 	)
 }
@@ -621,6 +656,14 @@ func (c *jsiiProxy_ContainerVolumesOutputReference) ResetReadOnly() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetReadOnly",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerVolumesOutputReference) ResetSelinuxRelabel() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSelinuxRelabel",
 		nil, // no parameters
 	)
 }

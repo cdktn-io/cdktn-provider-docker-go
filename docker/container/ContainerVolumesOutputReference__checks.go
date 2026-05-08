@@ -234,6 +234,14 @@ func (j *jsiiProxy_ContainerVolumesOutputReference) validateSetReadOnlyParameter
 	return nil
 }
 
+func (j *jsiiProxy_ContainerVolumesOutputReference) validateSetSelinuxRelabelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerVolumesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

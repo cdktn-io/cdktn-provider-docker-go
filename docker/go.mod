@@ -1,4 +1,4 @@
-module github.com/cdktn-io/cdktn-provider-docker-go/docker/v14
+module github.com/cdktn-io/cdktn-provider-docker-go/docker/v15
 
 go 1.25
 

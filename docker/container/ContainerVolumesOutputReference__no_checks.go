@@ -79,6 +79,10 @@ func (j *jsiiProxy_ContainerVolumesOutputReference) validateSetReadOnlyParameter
 	return nil
 }
 
+func (j *jsiiProxy_ContainerVolumesOutputReference) validateSetSelinuxRelabelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerVolumesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package datadockerregistryimagemanifests
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/datadockerregistryimagemanifests/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/datadockerregistryimagemanifests/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/data-sources/registry_image_manifests docker_registry_image_manifests}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/data-sources/registry_image_manifests docker_registry_image_manifests}.
 type DataDockerRegistryImageManifests interface {
 	cdktn.TerraformDataSource
 	AuthConfig() DataDockerRegistryImageManifestsAuthConfigOutputReference
@@ -356,7 +356,7 @@ func (j *jsiiProxy_DataDockerRegistryImageManifests) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/data-sources/registry_image_manifests docker_registry_image_manifests} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/data-sources/registry_image_manifests docker_registry_image_manifests} Data Source.
 func NewDataDockerRegistryImageManifests(scope constructs.Construct, id *string, config *DataDockerRegistryImageManifestsConfig) DataDockerRegistryImageManifests {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewDataDockerRegistryImageManifests(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/data-sources/registry_image_manifests docker_registry_image_manifests} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/data-sources/registry_image_manifests docker_registry_image_manifests} Data Source.
 func NewDataDockerRegistryImageManifests_Override(d DataDockerRegistryImageManifests, scope constructs.Construct, id *string, config *DataDockerRegistryImageManifestsConfig) {
 	_init_.Initialize()
 

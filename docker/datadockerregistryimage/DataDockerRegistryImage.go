@@ -5,14 +5,14 @@ package datadockerregistryimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/datadockerregistryimage/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/datadockerregistryimage/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/data-sources/registry_image docker_registry_image}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/data-sources/registry_image docker_registry_image}.
 type DataDockerRegistryImage interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_DataDockerRegistryImage) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/data-sources/registry_image docker_registry_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/data-sources/registry_image docker_registry_image} Data Source.
 func NewDataDockerRegistryImage(scope constructs.Construct, id *string, config *DataDockerRegistryImageConfig) DataDockerRegistryImage {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewDataDockerRegistryImage(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/data-sources/registry_image docker_registry_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/data-sources/registry_image docker_registry_image} Data Source.
 func NewDataDockerRegistryImage_Override(d DataDockerRegistryImage, scope constructs.Construct, id *string, config *DataDockerRegistryImageConfig) {
 	_init_.Initialize()
 

@@ -174,6 +174,22 @@ func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetComplexO
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetDriverOptsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetGwPriorityParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktn.IResolvable:
@@ -207,6 +223,14 @@ func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetIpv4Addr
 }
 
 func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetIpv6AddressParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetLinkLocalIpsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

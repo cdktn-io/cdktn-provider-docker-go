@@ -5,14 +5,14 @@ package network
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/network/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/network/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/network docker_network}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/network docker_network}.
 type Network interface {
 	cdktn.TerraformResource
 	Attachable() interface{}
@@ -20,9 +20,6 @@ type Network interface {
 	AttachableInput() interface{}
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
-	CheckDuplicate() interface{}
-	SetCheckDuplicate(val interface{})
-	CheckDuplicateInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -145,7 +142,6 @@ type Network interface {
 	PutIpamConfig(value interface{})
 	PutLabels(value interface{})
 	ResetAttachable()
-	ResetCheckDuplicate()
 	ResetDriver()
 	ResetId()
 	ResetIngress()
@@ -211,26 +207,6 @@ func (j *jsiiProxy_Network) CdktfStack() cdktn.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Network) CheckDuplicate() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"checkDuplicate",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Network) CheckDuplicateInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"checkDuplicateInput",
 		&returns,
 	)
 	return returns
@@ -617,7 +593,7 @@ func (j *jsiiProxy_Network) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/network docker_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/network docker_network} Resource.
 func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) Network {
 	_init_.Initialize()
 
@@ -635,7 +611,7 @@ func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/network docker_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/network docker_network} Resource.
 func NewNetwork_Override(n Network, scope constructs.Construct, id *string, config *NetworkConfig) {
 	_init_.Initialize()
 
@@ -653,17 +629,6 @@ func (j *jsiiProxy_Network)SetAttachable(val interface{}) {
 	_jsii_.Set(
 		j,
 		"attachable",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Network)SetCheckDuplicate(val interface{}) {
-	if err := j.validateSetCheckDuplicateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"checkDuplicate",
 		val,
 	)
 }
@@ -1214,14 +1179,6 @@ func (n *jsiiProxy_Network) ResetAttachable() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetAttachable",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_Network) ResetCheckDuplicate() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetCheckDuplicate",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package registryimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/registryimage/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/registryimage/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -73,6 +73,8 @@ type RegistryImageAuthConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetPassword()
+	ResetUsername()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -518,6 +520,22 @@ func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) ResetUsername() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetUsername",
+		nil, // no parameters
+	)
 }
 
 func (r *jsiiProxy_RegistryImageAuthConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

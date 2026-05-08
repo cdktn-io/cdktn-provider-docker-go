@@ -5,20 +5,21 @@ package datadockernetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/datadockernetwork/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/datadockernetwork/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/data-sources/network docker_network}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/data-sources/network docker_network}.
 type DataDockerNetwork interface {
 	cdktn.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Containers() DataDockerNetworkContainersList
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -133,6 +134,16 @@ func (j *jsiiProxy_DataDockerNetwork) ConstructNodeMetadata() *map[string]interf
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDockerNetwork) Containers() DataDockerNetworkContainersList {
+	var returns DataDockerNetworkContainersList
+	_jsii_.Get(
+		j,
+		"containers",
 		&returns,
 	)
 	return returns
@@ -339,7 +350,7 @@ func (j *jsiiProxy_DataDockerNetwork) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/data-sources/network docker_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/data-sources/network docker_network} Data Source.
 func NewDataDockerNetwork(scope constructs.Construct, id *string, config *DataDockerNetworkConfig) DataDockerNetwork {
 	_init_.Initialize()
 
@@ -357,7 +368,7 @@ func NewDataDockerNetwork(scope constructs.Construct, id *string, config *DataDo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/data-sources/network docker_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/data-sources/network docker_network} Data Source.
 func NewDataDockerNetwork_Override(d DataDockerNetwork, scope constructs.Construct, id *string, config *DataDockerNetworkConfig) {
 	_init_.Initialize()
 

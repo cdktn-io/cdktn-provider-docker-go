@@ -5,14 +5,14 @@ package config
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/config/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/config/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/config docker_config}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/config docker_config}.
 type Config interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -45,6 +45,8 @@ type Config interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Labels() ConfigLabelsList
+	LabelsInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -113,7 +115,9 @@ type Config interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutLabels(value interface{})
 	ResetId()
+	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -264,6 +268,26 @@ func (j *jsiiProxy_Config) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Config) Labels() ConfigLabelsList {
+	var returns ConfigLabelsList
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Config) LabelsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Config) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -365,7 +389,7 @@ func (j *jsiiProxy_Config) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/config docker_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/config docker_config} Resource.
 func NewConfig(scope constructs.Construct, id *string, config *ConfigConfig) Config {
 	_init_.Initialize()
 
@@ -383,7 +407,7 @@ func NewConfig(scope constructs.Construct, id *string, config *ConfigConfig) Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/config docker_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/config docker_config} Resource.
 func NewConfig_Override(c Config, scope constructs.Construct, id *string, config *ConfigConfig) {
 	_init_.Initialize()
 
@@ -848,10 +872,29 @@ func (c *jsiiProxy_Config) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_Config) PutLabels(value interface{}) {
+	if err := c.validatePutLabelsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putLabels",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Config) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Config) ResetLabels() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

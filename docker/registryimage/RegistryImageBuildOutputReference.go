@@ -5,9 +5,9 @@ package registryimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/registryimage/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/registryimage/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -151,6 +151,9 @@ type RegistryImageBuildOutputReference interface {
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Ulimit() RegistryImageBuildUlimitList
 	UlimitInput() interface{}
+	UseLegacyBuilder() interface{}
+	SetUseLegacyBuilder(val interface{})
+	UseLegacyBuilderInput() interface{}
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -218,6 +221,7 @@ type RegistryImageBuildOutputReference interface {
 	ResetTag()
 	ResetTarget()
 	ResetUlimit()
+	ResetUseLegacyBuilder()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -1064,6 +1068,26 @@ func (j *jsiiProxy_RegistryImageBuildOutputReference) UlimitInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_RegistryImageBuildOutputReference) UseLegacyBuilder() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useLegacyBuilder",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegistryImageBuildOutputReference) UseLegacyBuilderInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useLegacyBuilderInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RegistryImageBuildOutputReference) Version() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1548,6 +1572,17 @@ func (j *jsiiProxy_RegistryImageBuildOutputReference)SetTerraformResource(val cd
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RegistryImageBuildOutputReference)SetUseLegacyBuilder(val interface{}) {
+	if err := j.validateSetUseLegacyBuilderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useLegacyBuilder",
 		val,
 	)
 }
@@ -2074,6 +2109,14 @@ func (r *jsiiProxy_RegistryImageBuildOutputReference) ResetUlimit() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetUlimit",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegistryImageBuildOutputReference) ResetUseLegacyBuilder() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetUseLegacyBuilder",
 		nil, // no parameters
 	)
 }

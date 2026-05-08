@@ -79,7 +79,27 @@ func (c *jsiiProxy_Container) validatePutCapabilitiesParameters(value *Container
 	return nil
 }
 
+func (c *jsiiProxy_Container) validatePutDeviceReadBpsParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_Container) validatePutDeviceReadIopsParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_Container) validatePutDeviceRequestsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Container) validatePutDevicesParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_Container) validatePutDeviceWriteBpsParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_Container) validatePutDeviceWriteIopsParameters(value interface{}) error {
 	return nil
 }
 
@@ -104,6 +124,10 @@ func (c *jsiiProxy_Container) validatePutNetworksAdvancedParameters(value interf
 }
 
 func (c *jsiiProxy_Container) validatePutPortsParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_Container) validatePutTimeoutsParameters(value *ContainerTimeouts) error {
 	return nil
 }
 
@@ -284,6 +308,10 @@ func (j *jsiiProxy_Container) validateSetNetworkModeParameters(val *string) erro
 }
 
 func (j *jsiiProxy_Container) validateSetPidModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Container) validateSetPlatformParameters(val *string) error {
 	return nil
 }
 

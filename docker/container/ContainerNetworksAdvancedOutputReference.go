@@ -5,9 +5,9 @@ package container
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/container/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/container/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -31,8 +31,14 @@ type ContainerNetworksAdvancedOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DriverOpts() *[]*string
+	SetDriverOpts(val *[]*string)
+	DriverOptsInput() *[]*string
 	// Experimental.
 	Fqn() *string
+	GwPriority() *float64
+	SetGwPriority(val *float64)
+	GwPriorityInput() *float64
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Ipv4Address() *string
@@ -41,6 +47,9 @@ type ContainerNetworksAdvancedOutputReference interface {
 	Ipv6Address() *string
 	SetIpv6Address(val *string)
 	Ipv6AddressInput() *string
+	LinkLocalIps() *[]*string
+	SetLinkLocalIps(val *[]*string)
+	LinkLocalIpsInput() *[]*string
 	MacAddress() *string
 	SetMacAddress(val *string)
 	MacAddressInput() *string
@@ -80,8 +89,11 @@ type ContainerNetworksAdvancedOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAliases()
+	ResetDriverOpts()
+	ResetGwPriority()
 	ResetIpv4Address()
 	ResetIpv6Address()
+	ResetLinkLocalIps()
 	ResetMacAddress()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -148,11 +160,51 @@ func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) CreationStack() *[]
 	return returns
 }
 
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) DriverOpts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"driverOpts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) DriverOptsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"driverOptsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) GwPriority() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"gwPriority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) GwPriorityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"gwPriorityInput",
 		&returns,
 	)
 	return returns
@@ -203,6 +255,26 @@ func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) Ipv6AddressInput() 
 	_jsii_.Get(
 		j,
 		"ipv6AddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) LinkLocalIps() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"linkLocalIps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) LinkLocalIpsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"linkLocalIpsInput",
 		&returns,
 	)
 	return returns
@@ -329,6 +401,28 @@ func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference)SetComplexObjectIsFr
 	)
 }
 
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference)SetDriverOpts(val *[]*string) {
+	if err := j.validateSetDriverOptsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"driverOpts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference)SetGwPriority(val *float64) {
+	if err := j.validateSetGwPriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gwPriority",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -358,6 +452,17 @@ func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference)SetIpv6Address(val *
 	_jsii_.Set(
 		j,
 		"ipv6Address",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference)SetLinkLocalIps(val *[]*string) {
+	if err := j.validateSetLinkLocalIpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"linkLocalIps",
 		val,
 	)
 }
@@ -600,6 +705,22 @@ func (c *jsiiProxy_ContainerNetworksAdvancedOutputReference) ResetAliases() {
 	)
 }
 
+func (c *jsiiProxy_ContainerNetworksAdvancedOutputReference) ResetDriverOpts() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDriverOpts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNetworksAdvancedOutputReference) ResetGwPriority() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGwPriority",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerNetworksAdvancedOutputReference) ResetIpv4Address() {
 	_jsii_.InvokeVoid(
 		c,
@@ -612,6 +733,14 @@ func (c *jsiiProxy_ContainerNetworksAdvancedOutputReference) ResetIpv6Address() 
 	_jsii_.InvokeVoid(
 		c,
 		"resetIpv6Address",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNetworksAdvancedOutputReference) ResetLinkLocalIps() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLinkLocalIps",
 		nil, // no parameters
 	)
 }

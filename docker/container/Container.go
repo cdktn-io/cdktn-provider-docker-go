@@ -5,14 +5,14 @@ package container
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/container/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/container/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/container docker_container}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/container docker_container}.
 type Container interface {
 	cdktn.TerraformResource
 	Attach() interface{}
@@ -68,8 +68,18 @@ type Container interface {
 	DestroyGraceSeconds() *float64
 	SetDestroyGraceSeconds(val *float64)
 	DestroyGraceSecondsInput() *float64
+	DeviceReadBps() ContainerDeviceReadBpsList
+	DeviceReadBpsInput() interface{}
+	DeviceReadIops() ContainerDeviceReadIopsList
+	DeviceReadIopsInput() interface{}
+	DeviceRequests() ContainerDeviceRequestsList
+	DeviceRequestsInput() interface{}
 	Devices() ContainerDevicesList
 	DevicesInput() interface{}
+	DeviceWriteBps() ContainerDeviceWriteBpsList
+	DeviceWriteBpsInput() interface{}
+	DeviceWriteIops() ContainerDeviceWriteIopsList
+	DeviceWriteIopsInput() interface{}
 	Dns() *[]*string
 	SetDns(val *[]*string)
 	DnsInput() *[]*string
@@ -168,6 +178,9 @@ type Container interface {
 	PidMode() *string
 	SetPidMode(val *string)
 	PidModeInput() *string
+	Platform() *string
+	SetPlatform(val *string)
+	PlatformInput() *string
 	Ports() ContainerPortsList
 	PortsInput() interface{}
 	Privileged() interface{}
@@ -231,6 +244,8 @@ type Container interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() ContainerTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Tmpfs() *map[string]*string
 	SetTmpfs(val *map[string]*string)
 	TmpfsInput() *map[string]*string
@@ -302,13 +317,19 @@ type Container interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCapabilities(value *ContainerCapabilities)
+	PutDeviceReadBps(value interface{})
+	PutDeviceReadIops(value interface{})
+	PutDeviceRequests(value interface{})
 	PutDevices(value interface{})
+	PutDeviceWriteBps(value interface{})
+	PutDeviceWriteIops(value interface{})
 	PutHealthcheck(value *ContainerHealthcheck)
 	PutHost(value interface{})
 	PutLabels(value interface{})
 	PutMounts(value interface{})
 	PutNetworksAdvanced(value interface{})
 	PutPorts(value interface{})
+	PutTimeouts(value *ContainerTimeouts)
 	PutUlimit(value interface{})
 	PutUpload(value interface{})
 	PutVolumes(value interface{})
@@ -324,7 +345,12 @@ type Container interface {
 	ResetCpuSet()
 	ResetCpuShares()
 	ResetDestroyGraceSeconds()
+	ResetDeviceReadBps()
+	ResetDeviceReadIops()
+	ResetDeviceRequests()
 	ResetDevices()
+	ResetDeviceWriteBps()
+	ResetDeviceWriteIops()
 	ResetDns()
 	ResetDnsOpts()
 	ResetDnsSearch()
@@ -355,6 +381,7 @@ type Container interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPidMode()
+	ResetPlatform()
 	ResetPorts()
 	ResetPrivileged()
 	ResetPublishAllPorts()
@@ -371,6 +398,7 @@ type Container interface {
 	ResetStopTimeout()
 	ResetStorageOpts()
 	ResetSysctls()
+	ResetTimeouts()
 	ResetTmpfs()
 	ResetTty()
 	ResetUlimit()
@@ -718,6 +746,66 @@ func (j *jsiiProxy_Container) DestroyGraceSecondsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Container) DeviceReadBps() ContainerDeviceReadBpsList {
+	var returns ContainerDeviceReadBpsList
+	_jsii_.Get(
+		j,
+		"deviceReadBps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Container) DeviceReadBpsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deviceReadBpsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Container) DeviceReadIops() ContainerDeviceReadIopsList {
+	var returns ContainerDeviceReadIopsList
+	_jsii_.Get(
+		j,
+		"deviceReadIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Container) DeviceReadIopsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deviceReadIopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Container) DeviceRequests() ContainerDeviceRequestsList {
+	var returns ContainerDeviceRequestsList
+	_jsii_.Get(
+		j,
+		"deviceRequests",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Container) DeviceRequestsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deviceRequestsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Container) Devices() ContainerDevicesList {
 	var returns ContainerDevicesList
 	_jsii_.Get(
@@ -733,6 +821,46 @@ func (j *jsiiProxy_Container) DevicesInput() interface{} {
 	_jsii_.Get(
 		j,
 		"devicesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Container) DeviceWriteBps() ContainerDeviceWriteBpsList {
+	var returns ContainerDeviceWriteBpsList
+	_jsii_.Get(
+		j,
+		"deviceWriteBps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Container) DeviceWriteBpsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deviceWriteBpsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Container) DeviceWriteIops() ContainerDeviceWriteIopsList {
+	var returns ContainerDeviceWriteIopsList
+	_jsii_.Get(
+		j,
+		"deviceWriteIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Container) DeviceWriteIopsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deviceWriteIopsInput",
 		&returns,
 	)
 	return returns
@@ -1388,6 +1516,26 @@ func (j *jsiiProxy_Container) PidModeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Container) Platform() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"platform",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Container) PlatformInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"platformInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Container) Ports() ContainerPortsList {
 	var returns ContainerPortsList
 	_jsii_.Get(
@@ -1768,6 +1916,26 @@ func (j *jsiiProxy_Container) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Container) Timeouts() ContainerTimeoutsOutputReference {
+	var returns ContainerTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Container) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Container) Tmpfs() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -1969,7 +2137,7 @@ func (j *jsiiProxy_Container) WorkingDirInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/container docker_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/container docker_container} Resource.
 func NewContainer(scope constructs.Construct, id *string, config *ContainerConfig) Container {
 	_init_.Initialize()
 
@@ -1987,7 +2155,7 @@ func NewContainer(scope constructs.Construct, id *string, config *ContainerConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/3.9.0/docs/resources/container docker_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/container docker_container} Resource.
 func NewContainer_Override(c Container, scope constructs.Construct, id *string, config *ContainerConfig) {
 	_init_.Initialize()
 
@@ -2428,6 +2596,17 @@ func (j *jsiiProxy_Container)SetPidMode(val *string) {
 	_jsii_.Set(
 		j,
 		"pidMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Container)SetPlatform(val *string) {
+	if err := j.validateSetPlatformParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"platform",
 		val,
 	)
 }
@@ -3057,6 +3236,39 @@ func (c *jsiiProxy_Container) PutCapabilities(value *ContainerCapabilities) {
 	)
 }
 
+func (c *jsiiProxy_Container) PutDeviceReadBps(value interface{}) {
+	if err := c.validatePutDeviceReadBpsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDeviceReadBps",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Container) PutDeviceReadIops(value interface{}) {
+	if err := c.validatePutDeviceReadIopsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDeviceReadIops",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Container) PutDeviceRequests(value interface{}) {
+	if err := c.validatePutDeviceRequestsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDeviceRequests",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Container) PutDevices(value interface{}) {
 	if err := c.validatePutDevicesParameters(value); err != nil {
 		panic(err)
@@ -3064,6 +3276,28 @@ func (c *jsiiProxy_Container) PutDevices(value interface{}) {
 	_jsii_.InvokeVoid(
 		c,
 		"putDevices",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Container) PutDeviceWriteBps(value interface{}) {
+	if err := c.validatePutDeviceWriteBpsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDeviceWriteBps",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Container) PutDeviceWriteIops(value interface{}) {
+	if err := c.validatePutDeviceWriteIopsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDeviceWriteIops",
 		[]interface{}{value},
 	)
 }
@@ -3130,6 +3364,17 @@ func (c *jsiiProxy_Container) PutPorts(value interface{}) {
 	_jsii_.InvokeVoid(
 		c,
 		"putPorts",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Container) PutTimeouts(value *ContainerTimeouts) {
+	if err := c.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTimeouts",
 		[]interface{}{value},
 	)
 }
@@ -3263,10 +3508,50 @@ func (c *jsiiProxy_Container) ResetDestroyGraceSeconds() {
 	)
 }
 
+func (c *jsiiProxy_Container) ResetDeviceReadBps() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeviceReadBps",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Container) ResetDeviceReadIops() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeviceReadIops",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Container) ResetDeviceRequests() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeviceRequests",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_Container) ResetDevices() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDevices",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Container) ResetDeviceWriteBps() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeviceWriteBps",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Container) ResetDeviceWriteIops() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeviceWriteIops",
 		nil, // no parameters
 	)
 }
@@ -3495,6 +3780,14 @@ func (c *jsiiProxy_Container) ResetPidMode() {
 	)
 }
 
+func (c *jsiiProxy_Container) ResetPlatform() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPlatform",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_Container) ResetPorts() {
 	_jsii_.InvokeVoid(
 		c,
@@ -3619,6 +3912,14 @@ func (c *jsiiProxy_Container) ResetSysctls() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSysctls",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Container) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

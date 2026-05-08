@@ -5,9 +5,9 @@ package container
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/container/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/container/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -86,6 +86,7 @@ type ContainerHealthcheckOutputReference interface {
 	ResetRetries()
 	ResetStartInterval()
 	ResetStartPeriod()
+	ResetTest()
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -655,6 +656,14 @@ func (c *jsiiProxy_ContainerHealthcheckOutputReference) ResetStartPeriod() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetStartPeriod",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerHealthcheckOutputReference) ResetTest() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTest",
 		nil, // no parameters
 	)
 }

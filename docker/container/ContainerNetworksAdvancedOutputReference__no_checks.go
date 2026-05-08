@@ -63,6 +63,14 @@ func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetComplexO
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetDriverOptsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetGwPriorityParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -72,6 +80,10 @@ func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetIpv4Addr
 }
 
 func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetIpv6AddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNetworksAdvancedOutputReference) validateSetLinkLocalIpsParameters(val *[]*string) error {
 	return nil
 }
 

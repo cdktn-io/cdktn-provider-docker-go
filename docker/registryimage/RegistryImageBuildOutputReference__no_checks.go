@@ -223,6 +223,10 @@ func (j *jsiiProxy_RegistryImageBuildOutputReference) validateSetTerraformResour
 	return nil
 }
 
+func (j *jsiiProxy_RegistryImageBuildOutputReference) validateSetUseLegacyBuilderParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RegistryImageBuildOutputReference) validateSetVersionParameters(val *string) error {
 	return nil
 }

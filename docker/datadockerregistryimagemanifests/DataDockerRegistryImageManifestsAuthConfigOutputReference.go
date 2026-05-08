@@ -5,9 +5,9 @@ package datadockerregistryimagemanifests
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v14/datadockerregistryimagemanifests/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/datadockerregistryimagemanifests/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -73,6 +73,8 @@ type DataDockerRegistryImageManifestsAuthConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetPassword()
+	ResetUsername()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -518,6 +520,22 @@ func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) In
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) ResetUsername() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsername",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDockerRegistryImageManifestsAuthConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
