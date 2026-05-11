@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/data-sources/containers docker_containers}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/data-sources/containers docker_containers}.
 type DataDockerContainers interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -272,7 +272,7 @@ func (j *jsiiProxy_DataDockerContainers) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/data-sources/containers docker_containers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/data-sources/containers docker_containers} Data Source.
 func NewDataDockerContainers(scope constructs.Construct, id *string, config *DataDockerContainersConfig) DataDockerContainers {
 	_init_.Initialize()
 
@@ -290,7 +290,7 @@ func NewDataDockerContainers(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/data-sources/containers docker_containers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/data-sources/containers docker_containers} Data Source.
 func NewDataDockerContainers_Override(d DataDockerContainers, scope constructs.Construct, id *string, config *DataDockerContainersConfig) {
 	_init_.Initialize()
 

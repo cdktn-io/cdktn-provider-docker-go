@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/volume docker_volume}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/volume docker_volume}.
 type Volume interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_Volume) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/volume docker_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/volume docker_volume} Resource.
 func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Volume {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Vol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/volume docker_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/volume docker_volume} Resource.
 func NewVolume_Override(v Volume, scope constructs.Construct, id *string, config *VolumeConfig) {
 	_init_.Initialize()
 

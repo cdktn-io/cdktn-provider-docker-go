@@ -107,6 +107,10 @@ func (j *jsiiProxy_Config) validateSetDataParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Config) validateSetDataRawParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Config) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -109,6 +109,9 @@ type ImageBuildOutputReference interface {
 	Platform() *string
 	SetPlatform(val *string)
 	PlatformInput() *string
+	Provenance() *string
+	SetProvenance(val *string)
+	ProvenanceInput() *string
 	PullParent() interface{}
 	SetPullParent(val interface{})
 	PullParentInput() interface{}
@@ -118,6 +121,9 @@ type ImageBuildOutputReference interface {
 	Remove() interface{}
 	SetRemove(val interface{})
 	RemoveInput() interface{}
+	Sbom() *string
+	SetSbom(val *string)
+	SbomInput() *string
 	Secrets() ImageBuildSecretsList
 	SecretsInput() interface{}
 	SecurityOpt() *[]*string
@@ -209,9 +215,11 @@ type ImageBuildOutputReference interface {
 	ResetNetworkMode()
 	ResetNoCache()
 	ResetPlatform()
+	ResetProvenance()
 	ResetPullParent()
 	ResetRemoteContext()
 	ResetRemove()
+	ResetSbom()
 	ResetSecrets()
 	ResetSecurityOpt()
 	ResetSessionId()
@@ -808,6 +816,26 @@ func (j *jsiiProxy_ImageBuildOutputReference) PlatformInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ImageBuildOutputReference) Provenance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provenance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageBuildOutputReference) ProvenanceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provenanceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ImageBuildOutputReference) PullParent() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -863,6 +891,26 @@ func (j *jsiiProxy_ImageBuildOutputReference) RemoveInput() interface{} {
 	_jsii_.Get(
 		j,
 		"removeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageBuildOutputReference) Sbom() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sbom",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageBuildOutputReference) SbomInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sbomInput",
 		&returns,
 	)
 	return returns
@@ -1444,6 +1492,17 @@ func (j *jsiiProxy_ImageBuildOutputReference)SetPlatform(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ImageBuildOutputReference)SetProvenance(val *string) {
+	if err := j.validateSetProvenanceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provenance",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ImageBuildOutputReference)SetPullParent(val interface{}) {
 	if err := j.validateSetPullParentParameters(val); err != nil {
 		panic(err)
@@ -1473,6 +1532,17 @@ func (j *jsiiProxy_ImageBuildOutputReference)SetRemove(val interface{}) {
 	_jsii_.Set(
 		j,
 		"remove",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ImageBuildOutputReference)SetSbom(val *string) {
+	if err := j.validateSetSbomParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sbom",
 		val,
 	)
 }
@@ -2017,6 +2087,14 @@ func (i *jsiiProxy_ImageBuildOutputReference) ResetPlatform() {
 	)
 }
 
+func (i *jsiiProxy_ImageBuildOutputReference) ResetProvenance() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetProvenance",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_ImageBuildOutputReference) ResetPullParent() {
 	_jsii_.InvokeVoid(
 		i,
@@ -2037,6 +2115,14 @@ func (i *jsiiProxy_ImageBuildOutputReference) ResetRemove() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetRemove",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImageBuildOutputReference) ResetSbom() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetSbom",
 		nil, // no parameters
 	)
 }

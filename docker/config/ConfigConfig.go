@@ -22,22 +22,26 @@ type ConfigConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Base64-url-safe-encoded config data.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/config#data Config#data}
-	Data *string `field:"required" json:"data" yaml:"data"`
 	// User-defined name of the config.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/config#name Config#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/config#name Config#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/config#id Config#id}.
+	// Base64-url-safe-encoded config data.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/config#data Config#data}
+	Data *string `field:"optional" json:"data" yaml:"data"`
+	// Raw (plain text) config data.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/config#data_raw Config#data_raw}
+	DataRaw *string `field:"optional" json:"dataRaw" yaml:"dataRaw"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/config#id Config#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// labels block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/config#labels Config#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/config#labels Config#labels}
 	Labels interface{} `field:"optional" json:"labels" yaml:"labels"`
 }
 

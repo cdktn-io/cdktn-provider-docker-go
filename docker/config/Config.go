@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/config docker_config}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/config docker_config}.
 type Config interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -30,6 +30,9 @@ type Config interface {
 	Data() *string
 	SetData(val *string)
 	DataInput() *string
+	DataRaw() *string
+	SetDataRaw(val *string)
+	DataRawInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -116,6 +119,8 @@ type Config interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLabels(value interface{})
+	ResetData()
+	ResetDataRaw()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -203,6 +208,26 @@ func (j *jsiiProxy_Config) DataInput() *string {
 	_jsii_.Get(
 		j,
 		"dataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Config) DataRaw() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataRaw",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Config) DataRawInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataRawInput",
 		&returns,
 	)
 	return returns
@@ -389,7 +414,7 @@ func (j *jsiiProxy_Config) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/config docker_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/config docker_config} Resource.
 func NewConfig(scope constructs.Construct, id *string, config *ConfigConfig) Config {
 	_init_.Initialize()
 
@@ -407,7 +432,7 @@ func NewConfig(scope constructs.Construct, id *string, config *ConfigConfig) Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/config docker_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/config docker_config} Resource.
 func NewConfig_Override(c Config, scope constructs.Construct, id *string, config *ConfigConfig) {
 	_init_.Initialize()
 
@@ -447,6 +472,17 @@ func (j *jsiiProxy_Config)SetData(val *string) {
 	_jsii_.Set(
 		j,
 		"data",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Config)SetDataRaw(val *string) {
+	if err := j.validateSetDataRawParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataRaw",
 		val,
 	)
 }
@@ -880,6 +916,22 @@ func (c *jsiiProxy_Config) PutLabels(value interface{}) {
 		c,
 		"putLabels",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Config) ResetData() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetData",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Config) ResetDataRaw() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDataRaw",
+		nil, // no parameters
 	)
 }
 

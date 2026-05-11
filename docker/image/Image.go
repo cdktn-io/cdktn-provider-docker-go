@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/image docker_image}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/image docker_image}.
 type Image interface {
 	cdktn.TerraformResource
 	BuildAttribute() ImageBuildOutputReference
@@ -519,7 +519,7 @@ func (j *jsiiProxy_Image) TriggersInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/image docker_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/image docker_image} Resource.
 func NewImage(scope constructs.Construct, id *string, config *ImageConfig) Image {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewImage(scope constructs.Construct, id *string, config *ImageConfig) Image
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.2.0/docs/resources/image docker_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/image docker_image} Resource.
 func NewImage_Override(i Image, scope constructs.Construct, id *string, config *ImageConfig) {
 	_init_.Initialize()
 

@@ -175,6 +175,10 @@ func (j *jsiiProxy_ImageBuildOutputReference) validateSetPlatformParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ImageBuildOutputReference) validateSetProvenanceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImageBuildOutputReference) validateSetPullParentParameters(val interface{}) error {
 	return nil
 }
@@ -184,6 +188,10 @@ func (j *jsiiProxy_ImageBuildOutputReference) validateSetRemoteContextParameters
 }
 
 func (j *jsiiProxy_ImageBuildOutputReference) validateSetRemoveParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ImageBuildOutputReference) validateSetSbomParameters(val *string) error {
 	return nil
 }
 
