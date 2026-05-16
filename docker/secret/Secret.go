@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/secret docker_secret}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.4.0/docs/resources/secret docker_secret}.
 type Secret interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -389,7 +389,7 @@ func (j *jsiiProxy_Secret) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/secret docker_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.4.0/docs/resources/secret docker_secret} Resource.
 func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Secret {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Sec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/secret docker_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.4.0/docs/resources/secret docker_secret} Resource.
 func NewSecret_Override(s Secret, scope constructs.Construct, id *string, config *SecretConfig) {
 	_init_.Initialize()
 

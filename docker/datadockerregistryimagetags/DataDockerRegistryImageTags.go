@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/data-sources/registry_image_tags docker_registry_image_tags}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.4.0/docs/data-sources/registry_image_tags docker_registry_image_tags}.
 type DataDockerRegistryImageTags interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_DataDockerRegistryImageTags) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/data-sources/registry_image_tags docker_registry_image_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.4.0/docs/data-sources/registry_image_tags docker_registry_image_tags} Data Source.
 func NewDataDockerRegistryImageTags(scope constructs.Construct, id *string, config *DataDockerRegistryImageTagsConfig) DataDockerRegistryImageTags {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewDataDockerRegistryImageTags(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/data-sources/registry_image_tags docker_registry_image_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.4.0/docs/data-sources/registry_image_tags docker_registry_image_tags} Data Source.
 func NewDataDockerRegistryImageTags_Override(d DataDockerRegistryImageTags, scope constructs.Construct, id *string, config *DataDockerRegistryImageTagsConfig) {
 	_init_.Initialize()
 

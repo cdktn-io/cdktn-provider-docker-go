@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/tag docker_tag}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.4.0/docs/resources/tag docker_tag}.
 type Tag interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_Tag) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/tag docker_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.4.0/docs/resources/tag docker_tag} Resource.
 func NewTag(scope constructs.Construct, id *string, config *TagConfig) Tag {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewTag(scope constructs.Construct, id *string, config *TagConfig) Tag {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/tag docker_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.4.0/docs/resources/tag docker_tag} Resource.
 func NewTag_Override(t Tag, scope constructs.Construct, id *string, config *TagConfig) {
 	_init_.Initialize()
 

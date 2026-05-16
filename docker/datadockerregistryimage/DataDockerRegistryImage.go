@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/data-sources/registry_image docker_registry_image}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.4.0/docs/data-sources/registry_image docker_registry_image}.
 type DataDockerRegistryImage interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_DataDockerRegistryImage) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/data-sources/registry_image docker_registry_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.4.0/docs/data-sources/registry_image docker_registry_image} Data Source.
 func NewDataDockerRegistryImage(scope constructs.Construct, id *string, config *DataDockerRegistryImageConfig) DataDockerRegistryImage {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewDataDockerRegistryImage(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/data-sources/registry_image docker_registry_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.4.0/docs/data-sources/registry_image docker_registry_image} Data Source.
 func NewDataDockerRegistryImage_Override(d DataDockerRegistryImage, scope constructs.Construct, id *string, config *DataDockerRegistryImageConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/compose docker_compose}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.4.0/docs/resources/compose docker_compose}.
 type Compose interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -497,7 +497,7 @@ func (j *jsiiProxy_Compose) WaitTimeoutInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/compose docker_compose} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.4.0/docs/resources/compose docker_compose} Resource.
 func NewCompose(scope constructs.Construct, id *string, config *ComposeConfig) Compose {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewCompose(scope constructs.Construct, id *string, config *ComposeConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.3.0/docs/resources/compose docker_compose} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.4.0/docs/resources/compose docker_compose} Resource.
 func NewCompose_Override(c Compose, scope constructs.Construct, id *string, config *ComposeConfig) {
 	_init_.Initialize()
 
