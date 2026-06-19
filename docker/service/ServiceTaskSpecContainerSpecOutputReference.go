@@ -65,6 +65,9 @@ type ServiceTaskSpecContainerSpecOutputReference interface {
 	Image() *string
 	SetImage(val *string)
 	ImageInput() *string
+	Init() interface{}
+	SetInit(val interface{})
+	InitInput() interface{}
 	InternalValue() *ServiceTaskSpecContainerSpec
 	SetInternalValue(val *ServiceTaskSpecContainerSpec)
 	Isolation() *string
@@ -145,6 +148,7 @@ type ServiceTaskSpecContainerSpecOutputReference interface {
 	ResetHealthcheck()
 	ResetHostname()
 	ResetHosts()
+	ResetInit()
 	ResetIsolation()
 	ResetLabels()
 	ResetMounts()
@@ -465,6 +469,26 @@ func (j *jsiiProxy_ServiceTaskSpecContainerSpecOutputReference) ImageInput() *st
 	_jsii_.Get(
 		j,
 		"imageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceTaskSpecContainerSpecOutputReference) Init() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"init",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceTaskSpecContainerSpecOutputReference) InitInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"initInput",
 		&returns,
 	)
 	return returns
@@ -845,6 +869,17 @@ func (j *jsiiProxy_ServiceTaskSpecContainerSpecOutputReference)SetImage(val *str
 	_jsii_.Set(
 		j,
 		"image",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceTaskSpecContainerSpecOutputReference)SetInit(val interface{}) {
+	if err := j.validateSetInitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"init",
 		val,
 	)
 }
@@ -1314,6 +1349,14 @@ func (s *jsiiProxy_ServiceTaskSpecContainerSpecOutputReference) ResetHosts() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetHosts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceTaskSpecContainerSpecOutputReference) ResetInit() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetInit",
 		nil, // no parameters
 	)
 }

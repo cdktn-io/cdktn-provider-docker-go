@@ -127,6 +127,10 @@ func (j *jsiiProxy_ServiceTaskSpecContainerSpecOutputReference) validateSetImage
 	return nil
 }
 
+func (j *jsiiProxy_ServiceTaskSpecContainerSpecOutputReference) validateSetInitParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceTaskSpecContainerSpecOutputReference) validateSetInternalValueParameters(val *ServiceTaskSpecContainerSpec) error {
 	return nil
 }
