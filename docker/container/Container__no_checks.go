@@ -59,6 +59,10 @@ func (c *jsiiProxy_Container) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (c *jsiiProxy_Container) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Container) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -140,6 +144,10 @@ func (c *jsiiProxy_Container) validatePutUploadParameters(value interface{}) err
 }
 
 func (c *jsiiProxy_Container) validatePutVolumesParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_Container) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

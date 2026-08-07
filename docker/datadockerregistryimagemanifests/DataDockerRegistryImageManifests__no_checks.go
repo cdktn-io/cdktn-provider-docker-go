@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDockerRegistryImageManifests) validatePutAuthConfigParame
 	return nil
 }
 
+func (d *jsiiProxy_DataDockerRegistryImageManifests) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDockerRegistryImageManifests_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

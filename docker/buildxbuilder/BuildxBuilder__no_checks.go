@@ -59,6 +59,10 @@ func (b *jsiiProxy_BuildxBuilder) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (b *jsiiProxy_BuildxBuilder) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BuildxBuilder) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (b *jsiiProxy_BuildxBuilder) validatePutKubernetesParameters(value *BuildxB
 }
 
 func (b *jsiiProxy_BuildxBuilder) validatePutRemoteParameters(value *BuildxBuilderRemote) error {
+	return nil
+}
+
+func (b *jsiiProxy_BuildxBuilder) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -122,6 +122,14 @@ func (v *jsiiProxy_Volume) validateInterpolationForAttributeParameters(terraform
 	return nil
 }
 
+func (v *jsiiProxy_Volume) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (v *jsiiProxy_Volume) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -244,6 +252,14 @@ func (v *jsiiProxy_Volume) validatePutLabelsParameters(value interface{}) error 
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*VolumeLabels; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (v *jsiiProxy_Volume) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

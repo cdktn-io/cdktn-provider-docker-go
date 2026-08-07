@@ -122,6 +122,14 @@ func (n *jsiiProxy_Network) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (n *jsiiProxy_Network) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (n *jsiiProxy_Network) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -264,6 +272,14 @@ func (n *jsiiProxy_Network) validatePutLabelsParameters(value interface{}) error
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*NetworkLabels; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (n *jsiiProxy_Network) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

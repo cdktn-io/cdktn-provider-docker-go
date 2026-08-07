@@ -59,6 +59,10 @@ func (i *jsiiProxy_Image) validateInterpolationForAttributeParameters(terraformA
 	return nil
 }
 
+func (i *jsiiProxy_Image) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_Image) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (i *jsiiProxy_Image) validatePutBuildAttributeParameters(value *ImageBuild)
 }
 
 func (i *jsiiProxy_Image) validatePutTimeoutsParameters(value *ImageTimeouts) error {
+	return nil
+}
+
+func (i *jsiiProxy_Image) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

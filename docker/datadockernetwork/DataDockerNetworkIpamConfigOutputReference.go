@@ -5,9 +5,9 @@ package datadockernetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-docker-go/docker/v16/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v15/datadockernetwork/internal"
+	"github.com/cdktn-io/cdktn-provider-docker-go/docker/v16/datadockernetwork/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
