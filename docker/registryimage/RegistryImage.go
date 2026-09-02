@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.5.0/docs/resources/registry_image docker_registry_image}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.6.0/docs/resources/registry_image docker_registry_image}.
 type RegistryImage interface {
 	cdktn.TerraformResource
 	AuthConfig() RegistryImageAuthConfigOutputReference
@@ -546,7 +546,7 @@ func (j *jsiiProxy_RegistryImage) TriggersInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.5.0/docs/resources/registry_image docker_registry_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.6.0/docs/resources/registry_image docker_registry_image} Resource.
 func NewRegistryImage(scope constructs.Construct, id *string, config *RegistryImageConfig) RegistryImage {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewRegistryImage(scope constructs.Construct, id *string, config *RegistryIm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.5.0/docs/resources/registry_image docker_registry_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.6.0/docs/resources/registry_image docker_registry_image} Resource.
 func NewRegistryImage_Override(r RegistryImage, scope constructs.Construct, id *string, config *RegistryImageConfig) {
 	_init_.Initialize()
 

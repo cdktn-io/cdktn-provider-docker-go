@@ -75,7 +75,15 @@ func (j *jsiiProxy_ContainerUploadOutputReference) validateSetFileParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ContainerUploadOutputReference) validateSetGroupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerUploadOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerUploadOutputReference) validateSetOwnerParameters(val *string) error {
 	return nil
 }
 

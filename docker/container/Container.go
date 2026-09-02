@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.5.0/docs/resources/container docker_container}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.6.0/docs/resources/container docker_container}.
 type Container interface {
 	cdktn.TerraformResource
 	Attach() interface{}
@@ -68,6 +68,9 @@ type Container interface {
 	DestroyGraceSeconds() *float64
 	SetDestroyGraceSeconds(val *float64)
 	DestroyGraceSecondsInput() *float64
+	DeviceCgroupRules() *[]*string
+	SetDeviceCgroupRules(val *[]*string)
+	DeviceCgroupRulesInput() *[]*string
 	DeviceReadBps() ContainerDeviceReadBpsList
 	DeviceReadBpsInput() interface{}
 	DeviceReadIops() ContainerDeviceReadIopsList
@@ -394,6 +397,7 @@ type Container interface {
 	ResetCpuSet()
 	ResetCpuShares()
 	ResetDestroyGraceSeconds()
+	ResetDeviceCgroupRules()
 	ResetDeviceReadBps()
 	ResetDeviceReadIops()
 	ResetDeviceRequests()
@@ -790,6 +794,26 @@ func (j *jsiiProxy_Container) DestroyGraceSecondsInput() *float64 {
 	_jsii_.Get(
 		j,
 		"destroyGraceSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Container) DeviceCgroupRules() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"deviceCgroupRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Container) DeviceCgroupRulesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"deviceCgroupRulesInput",
 		&returns,
 	)
 	return returns
@@ -2186,7 +2210,7 @@ func (j *jsiiProxy_Container) WorkingDirInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.5.0/docs/resources/container docker_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.6.0/docs/resources/container docker_container} Resource.
 func NewContainer(scope constructs.Construct, id *string, config *ContainerConfig) Container {
 	_init_.Initialize()
 
@@ -2204,7 +2228,7 @@ func NewContainer(scope constructs.Construct, id *string, config *ContainerConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.5.0/docs/resources/container docker_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.6.0/docs/resources/container docker_container} Resource.
 func NewContainer_Override(c Container, scope constructs.Construct, id *string, config *ContainerConfig) {
 	_init_.Initialize()
 
@@ -2362,6 +2386,17 @@ func (j *jsiiProxy_Container)SetDestroyGraceSeconds(val *float64) {
 	_jsii_.Set(
 		j,
 		"destroyGraceSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Container)SetDeviceCgroupRules(val *[]*string) {
+	if err := j.validateSetDeviceCgroupRulesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deviceCgroupRules",
 		val,
 	)
 }
@@ -3580,6 +3615,14 @@ func (c *jsiiProxy_Container) ResetDestroyGraceSeconds() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDestroyGraceSeconds",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Container) ResetDeviceCgroupRules() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeviceCgroupRules",
 		nil, // no parameters
 	)
 }

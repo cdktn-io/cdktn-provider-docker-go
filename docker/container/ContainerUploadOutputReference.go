@@ -42,8 +42,14 @@ type ContainerUploadOutputReference interface {
 	FileInput() *string
 	// Experimental.
 	Fqn() *string
+	Group() *string
+	SetGroup(val *string)
+	GroupInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Owner() *string
+	SetOwner(val *string)
+	OwnerInput() *string
 	Permissions() *string
 	SetPermissions(val *string)
 	PermissionsInput() *string
@@ -88,6 +94,8 @@ type ContainerUploadOutputReference interface {
 	ResetContent()
 	ResetContentBase64()
 	ResetExecutable()
+	ResetGroup()
+	ResetOwner()
 	ResetPermissions()
 	ResetSource()
 	ResetSourceHash()
@@ -226,11 +234,51 @@ func (j *jsiiProxy_ContainerUploadOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerUploadOutputReference) Group() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"group",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerUploadOutputReference) GroupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerUploadOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerUploadOutputReference) Owner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"owner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerUploadOutputReference) OwnerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerInput",
 		&returns,
 	)
 	return returns
@@ -410,6 +458,17 @@ func (j *jsiiProxy_ContainerUploadOutputReference)SetFile(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ContainerUploadOutputReference)SetGroup(val *string) {
+	if err := j.validateSetGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"group",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerUploadOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -417,6 +476,17 @@ func (j *jsiiProxy_ContainerUploadOutputReference)SetInternalValue(val interface
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerUploadOutputReference)SetOwner(val *string) {
+	if err := j.validateSetOwnerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"owner",
 		val,
 	)
 }
@@ -682,6 +752,22 @@ func (c *jsiiProxy_ContainerUploadOutputReference) ResetExecutable() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetExecutable",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerUploadOutputReference) ResetGroup() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGroup",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerUploadOutputReference) ResetOwner() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOwner",
 		nil, // no parameters
 	)
 }

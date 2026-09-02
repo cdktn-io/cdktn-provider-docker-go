@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.5.0/docs/resources/network docker_network}.
+// Represents a {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.6.0/docs/resources/network docker_network}.
 type Network interface {
 	cdktn.TerraformResource
 	Attachable() interface{}
@@ -642,7 +642,7 @@ func (j *jsiiProxy_Network) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.5.0/docs/resources/network docker_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.6.0/docs/resources/network docker_network} Resource.
 func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) Network {
 	_init_.Initialize()
 
@@ -660,7 +660,7 @@ func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.5.0/docs/resources/network docker_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/kreuzwerker/docker/4.6.0/docs/resources/network docker_network} Resource.
 func NewNetwork_Override(n Network, scope constructs.Construct, id *string, config *NetworkConfig) {
 	_init_.Initialize()
 

@@ -219,6 +219,10 @@ func (j *jsiiProxy_Container) validateSetDestroyGraceSecondsParameters(val *floa
 	return nil
 }
 
+func (j *jsiiProxy_Container) validateSetDeviceCgroupRulesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Container) validateSetDnsParameters(val *[]*string) error {
 	return nil
 }

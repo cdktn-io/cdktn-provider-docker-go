@@ -920,6 +920,14 @@ func (j *jsiiProxy_Container) validateSetDestroyGraceSecondsParameters(val *floa
 	return nil
 }
 
+func (j *jsiiProxy_Container) validateSetDeviceCgroupRulesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Container) validateSetDnsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
